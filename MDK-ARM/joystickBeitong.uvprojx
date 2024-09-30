@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_FULL_LL_DRIVER,USE_HAL_DRIVER,STM32G431xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../BSP;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../BSP;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;..\BSP\LCD;..\BSP\Interface</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -517,24 +517,24 @@
           <GroupName>BSP</GroupName>
           <Files>
             <File>
-              <FileName>lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\lcd.c</FilePath>
-            </File>
-            <File>
-              <FileName>lcd_init.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\lcd_init.c</FilePath>
+              <FileName>joystick.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\BSP\Interface\joystick.cpp</FilePath>
             </File>
             <File>
               <FileName>sky_button.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\BSP\sky_button.cpp</FilePath>
+              <FilePath>..\BSP\Interface\sky_button.cpp</FilePath>
             </File>
             <File>
-              <FileName>joystick.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\BSP\joystick.cpp</FilePath>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\LCD\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\LCD\lcd_init.c</FilePath>
             </File>
           </Files>
         </Group>

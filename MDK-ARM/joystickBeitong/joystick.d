@@ -1,5 +1,6 @@
-joystickbeitong/joystick.o: ..\BSP\joystick.cpp ..\BSP\joystick.h \
-  ..\Core\Inc\main.h ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
+joystickbeitong/joystick.o: ..\BSP\Interface\joystick.cpp \
+  ..\BSP\Interface\joystick.h ..\Core\Inc\main.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Core\Inc\stm32g4xx_hal_conf.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h \
@@ -9,12 +10,12 @@ joystickbeitong/joystick.o: ..\BSP\joystick.cpp ..\BSP\joystick.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__config \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
-  D:\Project\Embedded_project\Stm_pro\joystickBeitong\Drivers\CMSIS\Include\cmsis_version.h \
-  D:\Project\Embedded_project\Stm_pro\joystickBeitong\Drivers\CMSIS\Include\cmsis_compiler.h \
-  D:\Project\Embedded_project\Stm_pro\joystickBeitong\Drivers\CMSIS\Include\cmsis_armclang.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
-  D:\Project\Embedded_project\Stm_pro\joystickBeitong\Drivers\CMSIS\Include\mpu_armv7.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stddef.h \
@@ -50,4 +51,4 @@ joystickbeitong/joystick.o: ..\BSP\joystick.cpp ..\BSP\joystick.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
-  ..\Core\Inc\adc.h ..\BSP\sky_button.h ..\BSP\lcd.h
+  ..\Core\Inc\adc.h ..\BSP\Interface\sky_button.h ..\BSP\LCD\lcd.h
