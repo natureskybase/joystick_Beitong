@@ -204,86 +204,6 @@ Section Cross References
     system_stm32g4xx.o(.text.SystemCoreClockUpdate) refers to system_stm32g4xx.o(.data.SystemCoreClock) for SystemCoreClock
     system_stm32g4xx.o(.text.SystemCoreClockUpdate) refers to system_stm32g4xx.o(.rodata.AHBPrescTable) for AHBPrescTable
     system_stm32g4xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32g4xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
-    lcd.o(.text.LCD_Fill) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
-    lcd.o(.text.LCD_Fill) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(.ARM.exidx.text.LCD_Fill) refers to lcd.o(.text.LCD_Fill) for [Anonymous Symbol]
-    lcd.o(.text.LCD_DrawPoint) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
-    lcd.o(.text.LCD_DrawPoint) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(.ARM.exidx.text.LCD_DrawPoint) refers to lcd.o(.text.LCD_DrawPoint) for [Anonymous Symbol]
-    lcd.o(.text.LCD_DrawLine) refers to lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
-    lcd.o(.ARM.exidx.text.LCD_DrawLine) refers to lcd.o(.text.LCD_DrawLine) for [Anonymous Symbol]
-    lcd.o(.text.LCD_DrawRectangle) refers to lcd.o(.text.LCD_DrawLine) for LCD_DrawLine
-    lcd.o(.ARM.exidx.text.LCD_DrawRectangle) refers to lcd.o(.text.LCD_DrawRectangle) for [Anonymous Symbol]
-    lcd.o(.text.Draw_Circle) refers to lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
-    lcd.o(.ARM.exidx.text.Draw_Circle) refers to lcd.o(.text.Draw_Circle) for [Anonymous Symbol]
-    lcd.o(.text.LCD_ShowChar) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
-    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_1206) for ascii_1206
-    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_1608) for ascii_1608
-    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_2412) for ascii_2412
-    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_3216) for ascii_3216
-    lcd.o(.text.LCD_ShowChar) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
-    lcd.o(.ARM.exidx.text.LCD_ShowChar) refers to lcd.o(.text.LCD_ShowChar) for [Anonymous Symbol]
-    lcd.o(.text.LCD_ShowString) refers to lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
-    lcd.o(.ARM.exidx.text.LCD_ShowString) refers to lcd.o(.text.LCD_ShowString) for [Anonymous Symbol]
-    lcd.o(.ARM.exidx.text.mypow) refers to lcd.o(.text.mypow) for [Anonymous Symbol]
-    lcd.o(.text.LCD_ShowIntNum) refers to lcd.o(.text.mypow) for mypow
-    lcd.o(.text.LCD_ShowIntNum) refers to lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
-    lcd.o(.ARM.exidx.text.LCD_ShowIntNum) refers to lcd.o(.text.LCD_ShowIntNum) for [Anonymous Symbol]
-    lcd.o(.text.LCD_ShowFloatNum1) refers to lcd.o(.text.mypow) for mypow
-    lcd.o(.text.LCD_ShowFloatNum1) refers to lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
-    lcd.o(.ARM.exidx.text.LCD_ShowFloatNum1) refers to lcd.o(.text.LCD_ShowFloatNum1) for [Anonymous Symbol]
-    lcd.o(.text.LCD_ShowPicture) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
-    lcd.o(.text.LCD_ShowPicture) refers to lcd_init.o(.text.LCD_WR_DATA8) for LCD_WR_DATA8
-    lcd.o(.ARM.exidx.text.LCD_ShowPicture) refers to lcd.o(.text.LCD_ShowPicture) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.LCD_GPIO_Init) refers to lcd_init.o(.text.LCD_GPIO_Init) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_Writ_Bus) refers to lcd_init.o(.text.LL_SPI_IsActiveFlag_TXE) for LL_SPI_IsActiveFlag_TXE
-    lcd_init.o(.text.LCD_Writ_Bus) refers to lcd_init.o(.text.LL_SPI_TransmitData8) for LL_SPI_TransmitData8
-    lcd_init.o(.text.LCD_Writ_Bus) refers to lcd_init.o(.text.delay) for delay
-    lcd_init.o(.ARM.exidx.text.LCD_Writ_Bus) refers to lcd_init.o(.text.LCD_Writ_Bus) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.LL_SPI_IsActiveFlag_TXE) refers to lcd_init.o(.text.LL_SPI_IsActiveFlag_TXE) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.LL_SPI_TransmitData8) refers to lcd_init.o(.text.LL_SPI_TransmitData8) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.delay) refers to lcd_init.o(.text.delay) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_WR_DATA8) refers to lcd_init.o(.text.LCD_Writ_Bus) for LCD_Writ_Bus
-    lcd_init.o(.ARM.exidx.text.LCD_WR_DATA8) refers to lcd_init.o(.text.LCD_WR_DATA8) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_WR_DATA) refers to lcd_init.o(.text.LCD_Writ_Bus) for LCD_Writ_Bus
-    lcd_init.o(.ARM.exidx.text.LCD_WR_DATA) refers to lcd_init.o(.text.LCD_WR_DATA) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_WR_REG) refers to lcd_init.o(.text.LL_GPIO_ResetOutputPin) for LL_GPIO_ResetOutputPin
-    lcd_init.o(.text.LCD_WR_REG) refers to lcd_init.o(.text.LCD_Writ_Bus) for LCD_Writ_Bus
-    lcd_init.o(.text.LCD_WR_REG) refers to lcd_init.o(.text.LL_GPIO_SetOutputPin) for LL_GPIO_SetOutputPin
-    lcd_init.o(.ARM.exidx.text.LCD_WR_REG) refers to lcd_init.o(.text.LCD_WR_REG) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.LL_GPIO_ResetOutputPin) refers to lcd_init.o(.text.LL_GPIO_ResetOutputPin) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.LL_GPIO_SetOutputPin) refers to lcd_init.o(.text.LL_GPIO_SetOutputPin) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_Address_Set) refers to lcd_init.o(.text.LCD_WR_REG) for LCD_WR_REG
-    lcd_init.o(.text.LCD_Address_Set) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
-    lcd_init.o(.ARM.exidx.text.LCD_Address_Set) refers to lcd_init.o(.text.LCD_Address_Set) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_GPIO_Init) for LCD_GPIO_Init
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LL_SPI_Enable) for LL_SPI_Enable
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LL_GPIO_ResetOutputPin) for LL_GPIO_ResetOutputPin
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_delay) for LCD_delay
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LL_GPIO_SetOutputPin) for LL_GPIO_SetOutputPin
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_WR_REG) for LCD_WR_REG
-    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_WR_DATA8) for LCD_WR_DATA8
-    lcd_init.o(.ARM.exidx.text.LCD_Init) refers to lcd_init.o(.text.LCD_Init) for [Anonymous Symbol]
-    lcd_init.o(.ARM.exidx.text.LL_SPI_Enable) refers to lcd_init.o(.text.LL_SPI_Enable) for [Anonymous Symbol]
-    lcd_init.o(.text.LCD_delay) refers to stm32g4xx_hal.o(.text.HAL_Delay) for HAL_Delay
-    lcd_init.o(.ARM.exidx.text.LCD_delay) refers to lcd_init.o(.text.LCD_delay) for [Anonymous Symbol]
-    sky_button.o(.text._ZN6button13button_updateEv) refers to sky_button.o(.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj) for LL_GPIO_IsInputPinSet(GPIO_TypeDef*, unsigned int)
-    sky_button.o(.ARM.exidx.text._ZN6button13button_updateEv) refers to sky_button.o(.text._ZN6button13button_updateEv) for [Anonymous Symbol]
-    sky_button.o(.ARM.exidx.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj) refers to sky_button.o(.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj) for [Anonymous Symbol]
-    sky_button.o(.text._ZN6button18buttonStateMachineEv) refers to sky_button.o(.bss._ZZN6button18buttonStateMachineEvE10_dead_time) for button::buttonStateMachine()::_dead_time
-    sky_button.o(.ARM.exidx.text._ZN6button18buttonStateMachineEv) refers to sky_button.o(.text._ZN6button18buttonStateMachineEv) for [Anonymous Symbol]
-    sky_button.o(.text._ZN6button17buttonStateUpdateEv) refers to sky_button.o(.text._ZN6button13button_updateEv) for button::button_update()
-    sky_button.o(.text._ZN6button17buttonStateUpdateEv) refers to sky_button.o(.text._ZN6button18buttonStateMachineEv) for button::buttonStateMachine()
-    sky_button.o(.ARM.exidx.text._ZN6button17buttonStateUpdateEv) refers to sky_button.o(.text._ZN6button17buttonStateUpdateEv) for [Anonymous Symbol]
-    sky_button.o(.ARM.exidx.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE) refers to sky_button.o(.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE) for [Anonymous Symbol]
-    sky_button.o(.ARM.exidx.text._ZN8joystick17StickStateMachineEv) refers to sky_button.o(.text._ZN8joystick17StickStateMachineEv) for [Anonymous Symbol]
-    sky_button.o(.text._ZN8joystick16StickStateUpdateEv) refers to sky_button.o(.text._ZN8joystick17StickStateMachineEv) for joystick::StickStateMachine()
-    sky_button.o(.ARM.exidx.text._ZN8joystick16StickStateUpdateEv) refers to sky_button.o(.text._ZN8joystick16StickStateUpdateEv) for [Anonymous Symbol]
-    sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._Z9list_swapIiEvRT_S1_) for void list_swap<int>(int&, int&)
-    sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._Z9list_swapIPFvttEEvRT_S3_) for void list_swap<void (*)(unsigned short, unsigned short)>(void (*&)(unsigned short, unsigned short), void (*&)(unsigned short, unsigned short))
-    sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._Z9list_swapItEvRT_S1_) for void list_swap<unsigned short>(unsigned short&, unsigned short&)
-    sky_button.o(.ARM.exidx.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) for [Anonymous Symbol]
     joystick.o(.text.__cxx_global_var_init) refers to joystick.o(.bss.button_RT) for button_RT
     joystick.o(.text.__cxx_global_var_init) refers to joystick.o(.text._ZN6buttonC2EP12GPIO_TypeDefj) for button::button__sub_object(GPIO_TypeDef*, unsigned int)
     joystick.o(.ARM.exidx.text.__cxx_global_var_init) refers to joystick.o(.text.__cxx_global_var_init) for [Anonymous Symbol]
@@ -396,6 +316,86 @@ Section Cross References
     joystick.o(.text._GLOBAL__sub_I_joystick.cpp) refers to joystick.o(.text.__cxx_global_var_init.21) for __cxx_global_var_init.21
     joystick.o(.ARM.exidx.text._GLOBAL__sub_I_joystick.cpp) refers to joystick.o(.text._GLOBAL__sub_I_joystick.cpp) for [Anonymous Symbol]
     joystick.o(.init_array) refers to joystick.o(.text._GLOBAL__sub_I_joystick.cpp) for _GLOBAL__sub_I_joystick.cpp
+    sky_button.o(.text._ZN6button13button_updateEv) refers to sky_button.o(.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj) for LL_GPIO_IsInputPinSet(GPIO_TypeDef*, unsigned int)
+    sky_button.o(.ARM.exidx.text._ZN6button13button_updateEv) refers to sky_button.o(.text._ZN6button13button_updateEv) for [Anonymous Symbol]
+    sky_button.o(.ARM.exidx.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj) refers to sky_button.o(.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj) for [Anonymous Symbol]
+    sky_button.o(.text._ZN6button18buttonStateMachineEv) refers to sky_button.o(.bss._ZZN6button18buttonStateMachineEvE10_dead_time) for button::buttonStateMachine()::_dead_time
+    sky_button.o(.ARM.exidx.text._ZN6button18buttonStateMachineEv) refers to sky_button.o(.text._ZN6button18buttonStateMachineEv) for [Anonymous Symbol]
+    sky_button.o(.text._ZN6button17buttonStateUpdateEv) refers to sky_button.o(.text._ZN6button13button_updateEv) for button::button_update()
+    sky_button.o(.text._ZN6button17buttonStateUpdateEv) refers to sky_button.o(.text._ZN6button18buttonStateMachineEv) for button::buttonStateMachine()
+    sky_button.o(.ARM.exidx.text._ZN6button17buttonStateUpdateEv) refers to sky_button.o(.text._ZN6button17buttonStateUpdateEv) for [Anonymous Symbol]
+    sky_button.o(.ARM.exidx.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE) refers to sky_button.o(.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE) for [Anonymous Symbol]
+    sky_button.o(.ARM.exidx.text._ZN8joystick17StickStateMachineEv) refers to sky_button.o(.text._ZN8joystick17StickStateMachineEv) for [Anonymous Symbol]
+    sky_button.o(.text._ZN8joystick16StickStateUpdateEv) refers to sky_button.o(.text._ZN8joystick17StickStateMachineEv) for joystick::StickStateMachine()
+    sky_button.o(.ARM.exidx.text._ZN8joystick16StickStateUpdateEv) refers to sky_button.o(.text._ZN8joystick16StickStateUpdateEv) for [Anonymous Symbol]
+    sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._Z9list_swapIiEvRT_S1_) for void list_swap<int>(int&, int&)
+    sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._Z9list_swapIPFvttEEvRT_S3_) for void list_swap<void (*)(unsigned short, unsigned short)>(void (*&)(unsigned short, unsigned short), void (*&)(unsigned short, unsigned short))
+    sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._Z9list_swapItEvRT_S1_) for void list_swap<unsigned short>(unsigned short&, unsigned short&)
+    sky_button.o(.ARM.exidx.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) refers to sky_button.o(.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi) for [Anonymous Symbol]
+    lcd.o(.text.LCD_Fill) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+    lcd.o(.text.LCD_Fill) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(.ARM.exidx.text.LCD_Fill) refers to lcd.o(.text.LCD_Fill) for [Anonymous Symbol]
+    lcd.o(.text.LCD_DrawPoint) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+    lcd.o(.text.LCD_DrawPoint) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(.ARM.exidx.text.LCD_DrawPoint) refers to lcd.o(.text.LCD_DrawPoint) for [Anonymous Symbol]
+    lcd.o(.text.LCD_DrawLine) refers to lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
+    lcd.o(.ARM.exidx.text.LCD_DrawLine) refers to lcd.o(.text.LCD_DrawLine) for [Anonymous Symbol]
+    lcd.o(.text.LCD_DrawRectangle) refers to lcd.o(.text.LCD_DrawLine) for LCD_DrawLine
+    lcd.o(.ARM.exidx.text.LCD_DrawRectangle) refers to lcd.o(.text.LCD_DrawRectangle) for [Anonymous Symbol]
+    lcd.o(.text.Draw_Circle) refers to lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
+    lcd.o(.ARM.exidx.text.Draw_Circle) refers to lcd.o(.text.Draw_Circle) for [Anonymous Symbol]
+    lcd.o(.text.LCD_ShowChar) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_1206) for ascii_1206
+    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_1608) for ascii_1608
+    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_2412) for ascii_2412
+    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.rodata.ascii_3216) for ascii_3216
+    lcd.o(.text.LCD_ShowChar) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(.text.LCD_ShowChar) refers to lcd.o(.text.LCD_DrawPoint) for LCD_DrawPoint
+    lcd.o(.ARM.exidx.text.LCD_ShowChar) refers to lcd.o(.text.LCD_ShowChar) for [Anonymous Symbol]
+    lcd.o(.text.LCD_ShowString) refers to lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
+    lcd.o(.ARM.exidx.text.LCD_ShowString) refers to lcd.o(.text.LCD_ShowString) for [Anonymous Symbol]
+    lcd.o(.ARM.exidx.text.mypow) refers to lcd.o(.text.mypow) for [Anonymous Symbol]
+    lcd.o(.text.LCD_ShowIntNum) refers to lcd.o(.text.mypow) for mypow
+    lcd.o(.text.LCD_ShowIntNum) refers to lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
+    lcd.o(.ARM.exidx.text.LCD_ShowIntNum) refers to lcd.o(.text.LCD_ShowIntNum) for [Anonymous Symbol]
+    lcd.o(.text.LCD_ShowFloatNum1) refers to lcd.o(.text.mypow) for mypow
+    lcd.o(.text.LCD_ShowFloatNum1) refers to lcd.o(.text.LCD_ShowChar) for LCD_ShowChar
+    lcd.o(.ARM.exidx.text.LCD_ShowFloatNum1) refers to lcd.o(.text.LCD_ShowFloatNum1) for [Anonymous Symbol]
+    lcd.o(.text.LCD_ShowPicture) refers to lcd_init.o(.text.LCD_Address_Set) for LCD_Address_Set
+    lcd.o(.text.LCD_ShowPicture) refers to lcd_init.o(.text.LCD_WR_DATA8) for LCD_WR_DATA8
+    lcd.o(.ARM.exidx.text.LCD_ShowPicture) refers to lcd.o(.text.LCD_ShowPicture) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.LCD_GPIO_Init) refers to lcd_init.o(.text.LCD_GPIO_Init) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_Writ_Bus) refers to lcd_init.o(.text.LL_SPI_IsActiveFlag_TXE) for LL_SPI_IsActiveFlag_TXE
+    lcd_init.o(.text.LCD_Writ_Bus) refers to lcd_init.o(.text.LL_SPI_TransmitData8) for LL_SPI_TransmitData8
+    lcd_init.o(.text.LCD_Writ_Bus) refers to lcd_init.o(.text.delay) for delay
+    lcd_init.o(.ARM.exidx.text.LCD_Writ_Bus) refers to lcd_init.o(.text.LCD_Writ_Bus) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.LL_SPI_IsActiveFlag_TXE) refers to lcd_init.o(.text.LL_SPI_IsActiveFlag_TXE) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.LL_SPI_TransmitData8) refers to lcd_init.o(.text.LL_SPI_TransmitData8) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.delay) refers to lcd_init.o(.text.delay) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_WR_DATA8) refers to lcd_init.o(.text.LCD_Writ_Bus) for LCD_Writ_Bus
+    lcd_init.o(.ARM.exidx.text.LCD_WR_DATA8) refers to lcd_init.o(.text.LCD_WR_DATA8) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_WR_DATA) refers to lcd_init.o(.text.LCD_Writ_Bus) for LCD_Writ_Bus
+    lcd_init.o(.ARM.exidx.text.LCD_WR_DATA) refers to lcd_init.o(.text.LCD_WR_DATA) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_WR_REG) refers to lcd_init.o(.text.LL_GPIO_ResetOutputPin) for LL_GPIO_ResetOutputPin
+    lcd_init.o(.text.LCD_WR_REG) refers to lcd_init.o(.text.LCD_Writ_Bus) for LCD_Writ_Bus
+    lcd_init.o(.text.LCD_WR_REG) refers to lcd_init.o(.text.LL_GPIO_SetOutputPin) for LL_GPIO_SetOutputPin
+    lcd_init.o(.ARM.exidx.text.LCD_WR_REG) refers to lcd_init.o(.text.LCD_WR_REG) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.LL_GPIO_ResetOutputPin) refers to lcd_init.o(.text.LL_GPIO_ResetOutputPin) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.LL_GPIO_SetOutputPin) refers to lcd_init.o(.text.LL_GPIO_SetOutputPin) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_Address_Set) refers to lcd_init.o(.text.LCD_WR_REG) for LCD_WR_REG
+    lcd_init.o(.text.LCD_Address_Set) refers to lcd_init.o(.text.LCD_WR_DATA) for LCD_WR_DATA
+    lcd_init.o(.ARM.exidx.text.LCD_Address_Set) refers to lcd_init.o(.text.LCD_Address_Set) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_GPIO_Init) for LCD_GPIO_Init
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LL_SPI_Enable) for LL_SPI_Enable
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LL_GPIO_ResetOutputPin) for LL_GPIO_ResetOutputPin
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_delay) for LCD_delay
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LL_GPIO_SetOutputPin) for LL_GPIO_SetOutputPin
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_WR_REG) for LCD_WR_REG
+    lcd_init.o(.text.LCD_Init) refers to lcd_init.o(.text.LCD_WR_DATA8) for LCD_WR_DATA8
+    lcd_init.o(.ARM.exidx.text.LCD_Init) refers to lcd_init.o(.text.LCD_Init) for [Anonymous Symbol]
+    lcd_init.o(.ARM.exidx.text.LL_SPI_Enable) refers to lcd_init.o(.text.LL_SPI_Enable) for [Anonymous Symbol]
+    lcd_init.o(.text.LCD_delay) refers to stm32g4xx_hal.o(.text.HAL_Delay) for HAL_Delay
+    lcd_init.o(.ARM.exidx.text.LCD_delay) refers to lcd_init.o(.text.LCD_delay) for [Anonymous Symbol]
     stm32g4xx_ll_utils.o(.text.LL_Init1msTick) refers to stm32g4xx_ll_utils.o(.text.LL_InitTick) for LL_InitTick
     stm32g4xx_ll_utils.o(.ARM.exidx.text.LL_Init1msTick) refers to stm32g4xx_ll_utils.o(.text.LL_Init1msTick) for [Anonymous Symbol]
     stm32g4xx_ll_utils.o(.ARM.exidx.text.LL_InitTick) refers to stm32g4xx_ll_utils.o(.text.LL_InitTick) for [Anonymous Symbol]
@@ -1763,11 +1763,11 @@ Section Cross References
     defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    joystick.o(.ARM.exidx.text._ZN6buttonC2EP12GPIO_TypeDefj) refers to joystick.o(.text._ZN6buttonC2EP12GPIO_TypeDefj) for [Anonymous Symbol]
+    joystick.o(.ARM.exidx.text._ZN8joystickC2Ev) refers to joystick.o(.text._ZN8joystickC2Ev) for [Anonymous Symbol]
     sky_button.o(.ARM.exidx.text._Z9list_swapIiEvRT_S1_) refers to sky_button.o(.text._Z9list_swapIiEvRT_S1_) for [Anonymous Symbol]
     sky_button.o(.ARM.exidx.text._Z9list_swapIPFvttEEvRT_S3_) refers to sky_button.o(.text._Z9list_swapIPFvttEEvRT_S3_) for [Anonymous Symbol]
     sky_button.o(.ARM.exidx.text._Z9list_swapItEvRT_S1_) refers to sky_button.o(.text._Z9list_swapItEvRT_S1_) for [Anonymous Symbol]
-    joystick.o(.ARM.exidx.text._ZN6buttonC2EP12GPIO_TypeDefj) refers to joystick.o(.text._ZN6buttonC2EP12GPIO_TypeDefj) for [Anonymous Symbol]
-    joystick.o(.ARM.exidx.text._ZN8joystickC2Ev) refers to joystick.o(.text._ZN8joystickC2Ev) for [Anonymous Symbol]
 
 
 ==============================================================================
@@ -1856,6 +1856,53 @@ Removing Unused input sections from the image.
     Removing system_stm32g4xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
     Removing system_stm32g4xx.o(.text.SystemCoreClockUpdate), (256 bytes).
     Removing system_stm32g4xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing joystick.o(.text), (0 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.1), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.2), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.3), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.4), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.5), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.6), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.7), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.8), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.9), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.10), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.11), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.12), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.13), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.14), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.15), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.16), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.17), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.18), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.19), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.20), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.21), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._Z7stickintt), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._Z11button_initv), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._Z18button_update_testv), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text.tim2_callback), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._ZL23LL_TIM_ClearFlag_UPDATEP11TIM_TypeDef), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._GLOBAL__sub_I_joystick.cpp), (8 bytes).
+    Removing joystick.o(.bss.button_state), (4 bytes).
+    Removing joystick.o(.bss.button_state_extence), (4 bytes).
+    Removing joystick.o(.bss.joystick_spin), (18 bytes).
+    Removing sky_button.o(.text), (0 bytes).
+    Removing sky_button.o(.text._ZN6button13button_updateEv), (32 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN6button13button_updateEv), (8 bytes).
+    Removing sky_button.o(.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj), (26 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj), (8 bytes).
+    Removing sky_button.o(.text._ZN6button18buttonStateMachineEv), (162 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN6button18buttonStateMachineEv), (8 bytes).
+    Removing sky_button.o(.text._ZN6button17buttonStateUpdateEv), (52 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN6button17buttonStateUpdateEv), (8 bytes).
+    Removing sky_button.o(.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE), (28 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE), (8 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN8joystick17StickStateMachineEv), (8 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN8joystick16StickStateUpdateEv), (8 bytes).
+    Removing sky_button.o(.ARM.exidx.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi), (8 bytes).
+    Removing sky_button.o(.bss._ZZN6button18buttonStateMachineEvE10_dead_time), (4 bytes).
     Removing lcd.o(.text), (0 bytes).
     Removing lcd.o(.ARM.exidx.text.LCD_Fill), (8 bytes).
     Removing lcd.o(.ARM.exidx.text.LCD_DrawPoint), (8 bytes).
@@ -1889,53 +1936,6 @@ Removing Unused input sections from the image.
     Removing lcd_init.o(.ARM.exidx.text.LCD_Init), (8 bytes).
     Removing lcd_init.o(.ARM.exidx.text.LL_SPI_Enable), (8 bytes).
     Removing lcd_init.o(.ARM.exidx.text.LCD_delay), (8 bytes).
-    Removing sky_button.o(.text), (0 bytes).
-    Removing sky_button.o(.text._ZN6button13button_updateEv), (32 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN6button13button_updateEv), (8 bytes).
-    Removing sky_button.o(.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj), (26 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZL21LL_GPIO_IsInputPinSetP12GPIO_TypeDefj), (8 bytes).
-    Removing sky_button.o(.text._ZN6button18buttonStateMachineEv), (162 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN6button18buttonStateMachineEv), (8 bytes).
-    Removing sky_button.o(.text._ZN6button17buttonStateUpdateEv), (52 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN6button17buttonStateUpdateEv), (8 bytes).
-    Removing sky_button.o(.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE), (28 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE), (8 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN8joystick17StickStateMachineEv), (8 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN8joystick16StickStateUpdateEv), (8 bytes).
-    Removing sky_button.o(.ARM.exidx.text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi), (8 bytes).
-    Removing sky_button.o(.bss._ZZN6button18buttonStateMachineEvE10_dead_time), (4 bytes).
-    Removing joystick.o(.text), (0 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.1), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.2), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.3), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.4), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.5), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.6), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.7), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.8), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.9), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.10), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.11), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.12), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.13), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.14), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.15), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.16), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.17), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.18), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.19), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.20), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.__cxx_global_var_init.21), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._Z7stickintt), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._Z11button_initv), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._Z18button_update_testv), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text.tim2_callback), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._ZL23LL_TIM_ClearFlag_UPDATEP11TIM_TypeDef), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._GLOBAL__sub_I_joystick.cpp), (8 bytes).
-    Removing joystick.o(.bss.button_state), (4 bytes).
-    Removing joystick.o(.bss.button_state_extence), (4 bytes).
-    Removing joystick.o(.bss.joystick_spin), (18 bytes).
     Removing stm32g4xx_ll_utils.o(.text), (0 bytes).
     Removing stm32g4xx_ll_utils.o(.text.LL_Init1msTick), (20 bytes).
     Removing stm32g4xx_ll_utils.o(.ARM.exidx.text.LL_Init1msTick), (8 bytes).
@@ -3116,11 +3116,11 @@ Removing Unused input sections from the image.
     Removing stm32g4xx_ll_usb.o(.ARM.exidx.text.USB_DeActivateRemoteWakeup), (8 bytes).
     Removing stm32g4xx_ll_usb.o(.text.USB_ReadPMA), (132 bytes).
     Removing stm32g4xx_ll_usb.o(.ARM.exidx.text.USB_ReadPMA), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._ZN6buttonC2EP12GPIO_TypeDefj), (8 bytes).
+    Removing joystick.o(.ARM.exidx.text._ZN8joystickC2Ev), (8 bytes).
     Removing sky_button.o(.ARM.exidx.text._Z9list_swapIiEvRT_S1_), (8 bytes).
     Removing sky_button.o(.ARM.exidx.text._Z9list_swapIPFvttEEvRT_S3_), (8 bytes).
     Removing sky_button.o(.ARM.exidx.text._Z9list_swapItEvRT_S1_), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._ZN6buttonC2EP12GPIO_TypeDefj), (8 bytes).
-    Removing joystick.o(.ARM.exidx.text._ZN8joystickC2Ev), (8 bytes).
 
 1347 unused section(s) (total 66440 bytes) removed from the image.
 
@@ -4176,24 +4176,24 @@ Memory Map of the image
     0x08003752   0x08003752   0x00000002   PAD
     0x08003754   0x08003754   0x00000010   Code   RO         1390    .text.HAL_SYSTICK_Config  stm32g4xx_hal_cortex.o
     0x08003764   0x08003764   0x00000004   Code   RO          182    .text.HardFault_Handler  stm32g4xx_it.o
-    0x08003768   0x08003768   0x0000005a   Code   RO          284    .text.LCD_Address_Set  lcd_init.o
+    0x08003768   0x08003768   0x0000005a   Code   RO          409    .text.LCD_Address_Set  lcd_init.o
     0x080037c2   0x080037c2   0x00000002   PAD
-    0x080037c4   0x080037c4   0x0000002c   Code   RO          233    .text.LCD_DrawPoint  lcd.o
-    0x080037f0   0x080037f0   0x00000090   Code   RO          231    .text.LCD_Fill      lcd.o
-    0x08003880   0x08003880   0x00000002   Code   RO          264    .text.LCD_GPIO_Init  lcd_init.o
+    0x080037c4   0x080037c4   0x0000002c   Code   RO          358    .text.LCD_DrawPoint  lcd.o
+    0x080037f0   0x080037f0   0x00000090   Code   RO          356    .text.LCD_Fill      lcd.o
+    0x08003880   0x08003880   0x00000002   Code   RO          389    .text.LCD_GPIO_Init  lcd_init.o
     0x08003882   0x08003882   0x00000002   PAD
-    0x08003884   0x08003884   0x0000027a   Code   RO          286    .text.LCD_Init      lcd_init.o
+    0x08003884   0x08003884   0x0000027a   Code   RO          411    .text.LCD_Init      lcd_init.o
     0x08003afe   0x08003afe   0x00000002   PAD
-    0x08003b00   0x08003b00   0x0000022a   Code   RO          241    .text.LCD_ShowChar  lcd.o
+    0x08003b00   0x08003b00   0x0000022a   Code   RO          366    .text.LCD_ShowChar  lcd.o
     0x08003d2a   0x08003d2a   0x00000002   PAD
-    0x08003d2c   0x08003d2c   0x0000013e   Code   RO          247    .text.LCD_ShowIntNum  lcd.o
+    0x08003d2c   0x08003d2c   0x0000013e   Code   RO          372    .text.LCD_ShowIntNum  lcd.o
     0x08003e6a   0x08003e6a   0x00000002   PAD
-    0x08003e6c   0x08003e6c   0x0000001c   Code   RO          276    .text.LCD_WR_DATA   lcd_init.o
-    0x08003e88   0x08003e88   0x00000014   Code   RO          274    .text.LCD_WR_DATA8  lcd_init.o
-    0x08003e9c   0x08003e9c   0x00000030   Code   RO          278    .text.LCD_WR_REG    lcd_init.o
-    0x08003ecc   0x08003ecc   0x00000036   Code   RO          266    .text.LCD_Writ_Bus  lcd_init.o
+    0x08003e6c   0x08003e6c   0x0000001c   Code   RO          401    .text.LCD_WR_DATA   lcd_init.o
+    0x08003e88   0x08003e88   0x00000014   Code   RO          399    .text.LCD_WR_DATA8  lcd_init.o
+    0x08003e9c   0x08003e9c   0x00000030   Code   RO          403    .text.LCD_WR_REG    lcd_init.o
+    0x08003ecc   0x08003ecc   0x00000036   Code   RO          391    .text.LCD_Writ_Bus  lcd_init.o
     0x08003f02   0x08003f02   0x00000002   PAD
-    0x08003f04   0x08003f04   0x00000010   Code   RO          290    .text.LCD_delay     lcd_init.o
+    0x08003f04   0x08003f04   0x00000010   Code   RO          415    .text.LCD_delay     lcd_init.o
     0x08003f14   0x08003f14   0x0000001c   Code   RO          701    .text.LL_ADC_Disable  stm32g4xx_hal_adc.o
     0x08003f30   0x08003f30   0x00000018   Code   RO          569    .text.LL_ADC_DisableDeepPowerDown  stm32g4xx_hal_adc.o
     0x08003f48   0x08003f48   0x0000001c   Code   RO          699    .text.LL_ADC_Enable  stm32g4xx_hal_adc.o
@@ -4252,11 +4252,11 @@ Memory Map of the image
     0x080043a2   0x080043a2   0x00000002   PAD
     0x080043a4   0x080043a4   0x000000dc   Code   RO          540    .text.LL_GPIO_Init  stm32g4xx_ll_gpio.o
     0x08004480   0x08004480   0x00000010   Code   RO           41    .text.LL_GPIO_ResetOutputPin  gpio.o
-    0x08004490   0x08004490   0x00000010   Code   RO          280    .text.LL_GPIO_ResetOutputPin  lcd_init.o
+    0x08004490   0x08004490   0x00000010   Code   RO          405    .text.LL_GPIO_ResetOutputPin  lcd_init.o
     0x080044a0   0x080044a0   0x0000007c   Code   RO          548    .text.LL_GPIO_SetAFPin_0_7  stm32g4xx_ll_gpio.o
     0x0800451c   0x0800451c   0x00000080   Code   RO          550    .text.LL_GPIO_SetAFPin_8_15  stm32g4xx_ll_gpio.o
     0x0800459c   0x0800459c   0x00000010   Code   RO           43    .text.LL_GPIO_SetOutputPin  gpio.o
-    0x080045ac   0x080045ac   0x00000010   Code   RO          282    .text.LL_GPIO_SetOutputPin  lcd_init.o
+    0x080045ac   0x080045ac   0x00000010   Code   RO          407    .text.LL_GPIO_SetOutputPin  lcd_init.o
     0x080045bc   0x080045bc   0x0000007c   Code   RO          552    .text.LL_GPIO_SetPinMode  stm32g4xx_ll_gpio.o
     0x08004638   0x08004638   0x0000001e   Code   RO          544    .text.LL_GPIO_SetPinOutputType  stm32g4xx_ll_gpio.o
     0x08004656   0x08004656   0x00000002   PAD
@@ -4281,12 +4281,12 @@ Memory Map of the image
     0x08004a20   0x08004a20   0x00000010   Code   RO         1731    .text.LL_RCC_PLL_GetR  stm32g4xx_ll_rcc.o
     0x08004a30   0x08004a30   0x00000012   Code   RO           89    .text.LL_SPI_DisableNSSPulseMgt  spi.o
     0x08004a42   0x08004a42   0x00000002   PAD
-    0x08004a44   0x08004a44   0x00000012   Code   RO          288    .text.LL_SPI_Enable  lcd_init.o
+    0x08004a44   0x08004a44   0x00000012   Code   RO          413    .text.LL_SPI_Enable  lcd_init.o
     0x08004a56   0x08004a56   0x00000002   PAD
     0x08004a58   0x08004a58   0x00000012   Code   RO           83    .text.LL_SPI_EnableNSSPulseMgt  spi.o
     0x08004a6a   0x08004a6a   0x00000002   PAD
     0x08004a6c   0x08004a6c   0x000000b8   Code   RO         1451    .text.LL_SPI_Init   stm32g4xx_ll_spi.o
-    0x08004b24   0x08004b24   0x00000010   Code   RO          268    .text.LL_SPI_IsActiveFlag_TXE  lcd_init.o
+    0x08004b24   0x08004b24   0x00000010   Code   RO          393    .text.LL_SPI_IsActiveFlag_TXE  lcd_init.o
     0x08004b34   0x08004b34   0x00000010   Code   RO         1453    .text.LL_SPI_IsEnabled  stm32g4xx_ll_spi.o
     0x08004b44   0x08004b44   0x00000012   Code   RO         1457    .text.LL_SPI_SetCRCPolynomial  stm32g4xx_ll_spi.o
     0x08004b56   0x08004b56   0x00000002   PAD
@@ -4294,7 +4294,7 @@ Memory Map of the image
     0x08004b72   0x08004b72   0x00000002   PAD
     0x08004b74   0x08004b74   0x0000001a   Code   RO           81    .text.LL_SPI_SetStandard  spi.o
     0x08004b8e   0x08004b8e   0x00000002   PAD
-    0x08004b90   0x08004b90   0x0000001a   Code   RO          270    .text.LL_SPI_TransmitData8  lcd_init.o
+    0x08004b90   0x08004b90   0x0000001a   Code   RO          395    .text.LL_SPI_TransmitData8  lcd_init.o
     0x08004baa   0x08004baa   0x00000002   PAD
     0x08004bac   0x08004bac   0x000000e8   Code   RO         1584    .text.LL_TIM_BDTR_Init  stm32g4xx_ll_tim.o
     0x08004c94   0x08004c94   0x00000012   Code   RO          102    .text.LL_TIM_DisableARRPreload  tim.o
@@ -4393,24 +4393,24 @@ Memory Map of the image
     0x08006798   0x08006798   0x0000001e   Code   RO         1856    .text.USB_DisableGlobalInt  stm32g4xx_ll_usb.o
     0x080067b6   0x080067b6   0x00000002   PAD
     0x080067b8   0x080067b8   0x00000004   Code   RO          188    .text.UsageFault_Handler  stm32g4xx_it.o
-    0x080067bc   0x080067bc   0x0000005c   Code   RO          383    .text._GLOBAL__sub_I_joystick.cpp  joystick.o
-    0x08006818   0x08006818   0x00000038   Code   RO          375    .text._Z11button_initv  joystick.o
-    0x08006850   0x08006850   0x00000010   Code   RO          377    .text._Z18button_update_testv  joystick.o
-    0x08006860   0x08006860   0x00000044   Code   RO          373    .text._Z7stickintt  joystick.o
-    0x080068a4   0x080068a4   0x0000001e   Code   RO          324    .text._Z9list_swapIPFvttEEvRT_S3_  sky_button.o
+    0x080067bc   0x080067bc   0x0000005c   Code   RO          285    .text._GLOBAL__sub_I_joystick.cpp  joystick.o
+    0x08006818   0x08006818   0x00000038   Code   RO          277    .text._Z11button_initv  joystick.o
+    0x08006850   0x08006850   0x00000010   Code   RO          279    .text._Z18button_update_testv  joystick.o
+    0x08006860   0x08006860   0x00000044   Code   RO          275    .text._Z7stickintt  joystick.o
+    0x080068a4   0x080068a4   0x0000001e   Code   RO          351    .text._Z9list_swapIPFvttEEvRT_S3_  sky_button.o
     0x080068c2   0x080068c2   0x00000002   PAD
-    0x080068c4   0x080068c4   0x0000001e   Code   RO          322    .text._Z9list_swapIiEvRT_S1_  sky_button.o
+    0x080068c4   0x080068c4   0x0000001e   Code   RO          349    .text._Z9list_swapIiEvRT_S1_  sky_button.o
     0x080068e2   0x080068e2   0x00000002   PAD
-    0x080068e4   0x080068e4   0x00000022   Code   RO          326    .text._Z9list_swapItEvRT_S1_  sky_button.o
+    0x080068e4   0x080068e4   0x00000022   Code   RO          353    .text._Z9list_swapItEvRT_S1_  sky_button.o
     0x08006906   0x08006906   0x00000002   PAD
-    0x08006908   0x08006908   0x00000010   Code   RO          381    .text._ZL23LL_TIM_ClearFlag_UPDATEP11TIM_TypeDef  joystick.o
-    0x08006918   0x08006918   0x00000020   Code   RO          419    .text._ZN6buttonC2EP12GPIO_TypeDefj  joystick.o
-    0x08006938   0x08006938   0x00000132   Code   RO          313    .text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi  sky_button.o
+    0x08006908   0x08006908   0x00000010   Code   RO          283    .text._ZL23LL_TIM_ClearFlag_UPDATEP11TIM_TypeDef  joystick.o
+    0x08006918   0x08006918   0x00000020   Code   RO          321    .text._ZN6buttonC2EP12GPIO_TypeDefj  joystick.o
+    0x08006938   0x08006938   0x00000132   Code   RO          340    .text._ZN8joystick13EventRegisterEPFvttEttNS_9EventTypeEi  sky_button.o
     0x08006a6a   0x08006a6a   0x00000002   PAD
-    0x08006a6c   0x08006a6c   0x0000007c   Code   RO          311    .text._ZN8joystick16StickStateUpdateEv  sky_button.o
-    0x08006ae8   0x08006ae8   0x00000162   Code   RO          309    .text._ZN8joystick17StickStateMachineEv  sky_button.o
+    0x08006a6c   0x08006a6c   0x0000007c   Code   RO          338    .text._ZN8joystick16StickStateUpdateEv  sky_button.o
+    0x08006ae8   0x08006ae8   0x00000162   Code   RO          336    .text._ZN8joystick17StickStateMachineEv  sky_button.o
     0x08006c4a   0x08006c4a   0x00000002   PAD
-    0x08006c4c   0x08006c4c   0x000000e6   Code   RO          421    .text._ZN8joystickC2Ev  joystick.o
+    0x08006c4c   0x08006c4c   0x000000e6   Code   RO          323    .text._ZN8joystickC2Ev  joystick.o
     0x08006d32   0x08006d32   0x00000002   PAD
     0x08006d34   0x08006d34   0x00000030   Code   RO          128    .text.__NVIC_EnableIRQ  tim.o
     0x08006d64   0x08006d64   0x00000030   Code   RO         1380    .text.__NVIC_EnableIRQ  stm32g4xx_hal_cortex.o
@@ -4421,47 +4421,47 @@ Memory Map of the image
     0x08006df8   0x08006df8   0x00000042   Code   RO         1374    .text.__NVIC_SetPriority  stm32g4xx_hal_cortex.o
     0x08006e3a   0x08006e3a   0x00000002   PAD
     0x08006e3c   0x08006e3c   0x0000003c   Code   RO         1368    .text.__NVIC_SetPriorityGrouping  stm32g4xx_hal_cortex.o
-    0x08006e78   0x08006e78   0x0000001a   Code   RO          329    .text.__cxx_global_var_init  joystick.o
+    0x08006e78   0x08006e78   0x0000001a   Code   RO          231    .text.__cxx_global_var_init  joystick.o
     0x08006e92   0x08006e92   0x00000002   PAD
-    0x08006e94   0x08006e94   0x0000001a   Code   RO          331    .text.__cxx_global_var_init.1  joystick.o
+    0x08006e94   0x08006e94   0x0000001a   Code   RO          233    .text.__cxx_global_var_init.1  joystick.o
     0x08006eae   0x08006eae   0x00000002   PAD
-    0x08006eb0   0x08006eb0   0x00000016   Code   RO          349    .text.__cxx_global_var_init.10  joystick.o
+    0x08006eb0   0x08006eb0   0x00000016   Code   RO          251    .text.__cxx_global_var_init.10  joystick.o
     0x08006ec6   0x08006ec6   0x00000002   PAD
-    0x08006ec8   0x08006ec8   0x0000001c   Code   RO          351    .text.__cxx_global_var_init.11  joystick.o
-    0x08006ee4   0x08006ee4   0x0000001c   Code   RO          353    .text.__cxx_global_var_init.12  joystick.o
-    0x08006f00   0x08006f00   0x0000001a   Code   RO          355    .text.__cxx_global_var_init.13  joystick.o
+    0x08006ec8   0x08006ec8   0x0000001c   Code   RO          253    .text.__cxx_global_var_init.11  joystick.o
+    0x08006ee4   0x08006ee4   0x0000001c   Code   RO          255    .text.__cxx_global_var_init.12  joystick.o
+    0x08006f00   0x08006f00   0x0000001a   Code   RO          257    .text.__cxx_global_var_init.13  joystick.o
     0x08006f1a   0x08006f1a   0x00000002   PAD
-    0x08006f1c   0x08006f1c   0x0000001a   Code   RO          357    .text.__cxx_global_var_init.14  joystick.o
+    0x08006f1c   0x08006f1c   0x0000001a   Code   RO          259    .text.__cxx_global_var_init.14  joystick.o
     0x08006f36   0x08006f36   0x00000002   PAD
-    0x08006f38   0x08006f38   0x0000001c   Code   RO          359    .text.__cxx_global_var_init.15  joystick.o
-    0x08006f54   0x08006f54   0x0000001c   Code   RO          361    .text.__cxx_global_var_init.16  joystick.o
-    0x08006f70   0x08006f70   0x00000018   Code   RO          363    .text.__cxx_global_var_init.17  joystick.o
-    0x08006f88   0x08006f88   0x00000018   Code   RO          365    .text.__cxx_global_var_init.18  joystick.o
-    0x08006fa0   0x08006fa0   0x00000020   Code   RO          367    .text.__cxx_global_var_init.19  joystick.o
-    0x08006fc0   0x08006fc0   0x0000001a   Code   RO          333    .text.__cxx_global_var_init.2  joystick.o
+    0x08006f38   0x08006f38   0x0000001c   Code   RO          261    .text.__cxx_global_var_init.15  joystick.o
+    0x08006f54   0x08006f54   0x0000001c   Code   RO          263    .text.__cxx_global_var_init.16  joystick.o
+    0x08006f70   0x08006f70   0x00000018   Code   RO          265    .text.__cxx_global_var_init.17  joystick.o
+    0x08006f88   0x08006f88   0x00000018   Code   RO          267    .text.__cxx_global_var_init.18  joystick.o
+    0x08006fa0   0x08006fa0   0x00000020   Code   RO          269    .text.__cxx_global_var_init.19  joystick.o
+    0x08006fc0   0x08006fc0   0x0000001a   Code   RO          235    .text.__cxx_global_var_init.2  joystick.o
     0x08006fda   0x08006fda   0x00000002   PAD
-    0x08006fdc   0x08006fdc   0x00000020   Code   RO          369    .text.__cxx_global_var_init.20  joystick.o
-    0x08006ffc   0x08006ffc   0x00000020   Code   RO          371    .text.__cxx_global_var_init.21  joystick.o
-    0x0800701c   0x0800701c   0x0000001a   Code   RO          335    .text.__cxx_global_var_init.3  joystick.o
+    0x08006fdc   0x08006fdc   0x00000020   Code   RO          271    .text.__cxx_global_var_init.20  joystick.o
+    0x08006ffc   0x08006ffc   0x00000020   Code   RO          273    .text.__cxx_global_var_init.21  joystick.o
+    0x0800701c   0x0800701c   0x0000001a   Code   RO          237    .text.__cxx_global_var_init.3  joystick.o
     0x08007036   0x08007036   0x00000002   PAD
-    0x08007038   0x08007038   0x00000016   Code   RO          337    .text.__cxx_global_var_init.4  joystick.o
+    0x08007038   0x08007038   0x00000016   Code   RO          239    .text.__cxx_global_var_init.4  joystick.o
     0x0800704e   0x0800704e   0x00000002   PAD
-    0x08007050   0x08007050   0x00000016   Code   RO          339    .text.__cxx_global_var_init.5  joystick.o
+    0x08007050   0x08007050   0x00000016   Code   RO          241    .text.__cxx_global_var_init.5  joystick.o
     0x08007066   0x08007066   0x00000002   PAD
-    0x08007068   0x08007068   0x00000016   Code   RO          341    .text.__cxx_global_var_init.6  joystick.o
+    0x08007068   0x08007068   0x00000016   Code   RO          243    .text.__cxx_global_var_init.6  joystick.o
     0x0800707e   0x0800707e   0x00000002   PAD
-    0x08007080   0x08007080   0x00000016   Code   RO          343    .text.__cxx_global_var_init.7  joystick.o
+    0x08007080   0x08007080   0x00000016   Code   RO          245    .text.__cxx_global_var_init.7  joystick.o
     0x08007096   0x08007096   0x00000002   PAD
-    0x08007098   0x08007098   0x00000016   Code   RO          345    .text.__cxx_global_var_init.8  joystick.o
+    0x08007098   0x08007098   0x00000016   Code   RO          247    .text.__cxx_global_var_init.8  joystick.o
     0x080070ae   0x080070ae   0x00000002   PAD
-    0x080070b0   0x080070b0   0x00000016   Code   RO          347    .text.__cxx_global_var_init.9  joystick.o
+    0x080070b0   0x080070b0   0x00000016   Code   RO          249    .text.__cxx_global_var_init.9  joystick.o
     0x080070c6   0x080070c6   0x00000002   PAD
-    0x080070c8   0x080070c8   0x00000016   Code   RO          272    .text.delay         lcd_init.o
+    0x080070c8   0x080070c8   0x00000016   Code   RO          397    .text.delay         lcd_init.o
     0x080070de   0x080070de   0x00000002   PAD
     0x080070e0   0x080070e0   0x0000007e   Code   RO           19    .text.main          main.o
     0x0800715e   0x0800715e   0x00000002   PAD
-    0x08007160   0x08007160   0x00000030   Code   RO          245    .text.mypow         lcd.o
-    0x08007190   0x08007190   0x00000048   Code   RO          379    .text.tim2_callback  joystick.o
+    0x08007160   0x08007160   0x00000030   Code   RO          370    .text.mypow         lcd.o
+    0x08007190   0x08007190   0x00000048   Code   RO          281    .text.tim2_callback  joystick.o
     0x080071d8   0x080071d8   0x0000001a   Code   RO         1985    x$fpl$fpinit        fz_wm.l(fpinit.o)
     0x080071f2   0x080071f2   0x00000010   Data   RO          222    .rodata.AHBPrescTable  system_stm32g4xx.o
     0x08007202   0x08007202   0x00000008   Data   RO          223    .rodata.APBPrescTable  system_stm32g4xx.o
@@ -4469,12 +4469,12 @@ Memory Map of the image
     0x08007214   0x08007214   0x0000000a   Data   RO          131    .rodata.SHIFT_TAB_OCxx  tim.o
     0x0800721e   0x0800721e   0x00000002   PAD
     0x08007220   0x08007220   0x00000030   Data   RO         1631    .rodata.USART_PRESCALER_TAB  stm32g4xx_ll_usart.o
-    0x08007250   0x08007250   0x00000474   Data   RO          253    .rodata.ascii_1206  lcd.o
-    0x080076c4   0x080076c4   0x000005f0   Data   RO          254    .rodata.ascii_1608  lcd.o
-    0x08007cb4   0x08007cb4   0x000011d0   Data   RO          255    .rodata.ascii_2412  lcd.o
-    0x08008e84   0x08008e84   0x000017c0   Data   RO          256    .rodata.ascii_3216  lcd.o
+    0x08007250   0x08007250   0x00000474   Data   RO          378    .rodata.ascii_1206  lcd.o
+    0x080076c4   0x080076c4   0x000005f0   Data   RO          379    .rodata.ascii_1608  lcd.o
+    0x08007cb4   0x08007cb4   0x000011d0   Data   RO          380    .rodata.ascii_2412  lcd.o
+    0x08008e84   0x08008e84   0x000017c0   Data   RO          381    .rodata.ascii_3216  lcd.o
     0x0800a644   0x0800a644   0x00000020   Data   RO         2082    Region$$Table       anon$$obj.o
-    0x0800a664   0x0800a664   0x00000004   Data   RO          412    .init_array         joystick.o
+    0x0800a664   0x0800a664   0x00000004   Data   RO          314    .init_array         joystick.o
     0x0800a668   0x0800a664   0x00000000   Data   RO         1911    .init_array         c_w.l(init_aeabi.o)
 
 
@@ -4487,33 +4487,33 @@ Memory Map of the image
     0x20000008   0x0800a670   0x00000004   Data   RW          952    .data.uwTickPrio    stm32g4xx_hal.o
     0x2000000c   0x0800a674   0x00000004   PAD
     0x20000010        -       0x00000060   Zero   RW         2006    .bss                c_w.l(libspace.o)
-    0x20000070        -       0x000007dc   Zero   RW          408    .bss.Stick_L        joystick.o
-    0x2000084c        -       0x000007dc   Zero   RW          409    .bss.Stick_R        joystick.o
-    0x20001028        -       0x00000008   Zero   RW          411    .bss._ZL9test_num1  joystick.o
-    0x20001030        -       0x00000008   Zero   RW          388    .bss.adc_vals       joystick.o
-    0x20001038        -       0x0000002c   Zero   RW          394    .bss.button_A       joystick.o
-    0x20001064        -       0x0000002c   Zero   RW          393    .bss.button_B       joystick.o
-    0x20001090        -       0x0000002c   Zero   RW          398    .bss.button_BACK    joystick.o
-    0x200010bc        -       0x0000002c   Zero   RW          399    .bss.button_CLEAR   joystick.o
-    0x200010e8        -       0x0000002c   Zero   RW          406    .bss.button_DOWN    joystick.o
-    0x20001114        -       0x0000002c   Zero   RW          397    .bss.button_HOME    joystick.o
-    0x20001140        -       0x0000002c   Zero   RW          402    .bss.button_LB      joystick.o
-    0x2000116c        -       0x0000002c   Zero   RW          405    .bss.button_LEFT    joystick.o
-    0x20001198        -       0x0000002c   Zero   RW          401    .bss.button_LS      joystick.o
-    0x200011c4        -       0x0000002c   Zero   RW          403    .bss.button_LT      joystick.o
-    0x200011f0        -       0x0000002c   Zero   RW          390    .bss.button_RB      joystick.o
-    0x2000121c        -       0x0000002c   Zero   RW          407    .bss.button_RIGHT   joystick.o
-    0x20001248        -       0x0000002c   Zero   RW          400    .bss.button_RS      joystick.o
-    0x20001274        -       0x0000002c   Zero   RW          389    .bss.button_RT      joystick.o
-    0x200012a0        -       0x0000002c   Zero   RW          395    .bss.button_START   joystick.o
-    0x200012cc        -       0x0000002c   Zero   RW          396    .bss.button_THRBO   joystick.o
-    0x200012f8        -       0x0000002c   Zero   RW          404    .bss.button_UP      joystick.o
-    0x20001324        -       0x0000002c   Zero   RW          392    .bss.button_X       joystick.o
-    0x20001350        -       0x0000002c   Zero   RW          391    .bss.button_Y       joystick.o
+    0x20000070        -       0x000007dc   Zero   RW          310    .bss.Stick_L        joystick.o
+    0x2000084c        -       0x000007dc   Zero   RW          311    .bss.Stick_R        joystick.o
+    0x20001028        -       0x00000008   Zero   RW          313    .bss._ZL9test_num1  joystick.o
+    0x20001030        -       0x00000008   Zero   RW          290    .bss.adc_vals       joystick.o
+    0x20001038        -       0x0000002c   Zero   RW          296    .bss.button_A       joystick.o
+    0x20001064        -       0x0000002c   Zero   RW          295    .bss.button_B       joystick.o
+    0x20001090        -       0x0000002c   Zero   RW          300    .bss.button_BACK    joystick.o
+    0x200010bc        -       0x0000002c   Zero   RW          301    .bss.button_CLEAR   joystick.o
+    0x200010e8        -       0x0000002c   Zero   RW          308    .bss.button_DOWN    joystick.o
+    0x20001114        -       0x0000002c   Zero   RW          299    .bss.button_HOME    joystick.o
+    0x20001140        -       0x0000002c   Zero   RW          304    .bss.button_LB      joystick.o
+    0x2000116c        -       0x0000002c   Zero   RW          307    .bss.button_LEFT    joystick.o
+    0x20001198        -       0x0000002c   Zero   RW          303    .bss.button_LS      joystick.o
+    0x200011c4        -       0x0000002c   Zero   RW          305    .bss.button_LT      joystick.o
+    0x200011f0        -       0x0000002c   Zero   RW          292    .bss.button_RB      joystick.o
+    0x2000121c        -       0x0000002c   Zero   RW          309    .bss.button_RIGHT   joystick.o
+    0x20001248        -       0x0000002c   Zero   RW          302    .bss.button_RS      joystick.o
+    0x20001274        -       0x0000002c   Zero   RW          291    .bss.button_RT      joystick.o
+    0x200012a0        -       0x0000002c   Zero   RW          297    .bss.button_START   joystick.o
+    0x200012cc        -       0x0000002c   Zero   RW          298    .bss.button_THRBO   joystick.o
+    0x200012f8        -       0x0000002c   Zero   RW          306    .bss.button_UP      joystick.o
+    0x20001324        -       0x0000002c   Zero   RW          294    .bss.button_X       joystick.o
+    0x20001350        -       0x0000002c   Zero   RW          293    .bss.button_Y       joystick.o
     0x2000137c        -       0x0000006c   Zero   RW           58    .bss.hadc1          adc.o
     0x200013e8        -       0x00000060   Zero   RW           59    .bss.hdma_adc1      adc.o
     0x20001448        -       0x000002dc   Zero   RW          172    .bss.hpcd_USB_FS    usb.o
-    0x20001724        -       0x000007dc   Zero   RW          410    .bss.sticktest      joystick.o
+    0x20001724        -       0x000007dc   Zero   RW          312    .bss.sticktest      joystick.o
     0x20001f00        -       0x00000004   Zero   RW          954    .bss.uwTick         stm32g4xx_hal.o
     0x20001f04   0x0800a674   0x00000004   PAD
     0x20001f08        -       0x00000200   Zero   RW            2    HEAP                startup_stm32g431xx.o
@@ -4527,42 +4527,42 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       600          0          0          0        204       7333   adc.o
-        86          0          0          0          0       3268   dma.o
-       766          0          0          0          0       2864   gpio.o
-      1148          0          4          0       6888       8694   joystick.o
-      1108          0      13300          0          0       5258   lcd.o
-      1006          0          0          0          0       3183   lcd_init.o
-       296          0          0          0          0       2747   main.o
-       878          0          0          0          0       5912   sky_button.o
-       600          0          0          0          0       3779   spi.o
+       600          0          0          0        204       7334   adc.o
+        86          0          0          0          0       3269   dma.o
+       766          0          0          0          0       2865   gpio.o
+      1148          0          4          0       6888       8715   joystick.o
+      1108          0      13300          0          0       5267   lcd.o
+      1006          0          0          0          0       3192   lcd_init.o
+       296          0          0          0          0       2748   main.o
+       878          0          0          0          0       5933   sky_button.o
+       600          0          0          0          0       3780   spi.o
         64         26        472          0       2560        852   startup_stm32g431xx.o
-       330          0          0          8          4       8432   stm32g4xx_hal.o
-      5196          0          0          0          0      22046   stm32g4xx_hal_adc.o
-       684          0          0          0          0      19456   stm32g4xx_hal_adc_ex.o
-       478          0          0          0          0       9422   stm32g4xx_hal_cortex.o
-      1222          0          0          0          0       7783   stm32g4xx_hal_dma.o
-       872          0          0          0          0       5320   stm32g4xx_hal_gpio.o
-        82          0          0          0          0       1651   stm32g4xx_hal_msp.o
-       404          0          0          0          0      13717   stm32g4xx_hal_pcd.o
-        58          0          0          0          0       5099   stm32g4xx_hal_pcd_ex.o
-       454          0          0          0          0       7815   stm32g4xx_hal_pwr_ex.o
-      3188          0          0          0          0       9404   stm32g4xx_hal_rcc.o
-      1114          0          0          0          0      10915   stm32g4xx_hal_rcc_ex.o
-        58          0          0          0          0       1207   stm32g4xx_it.o
-       874          0          0          0          0       5138   stm32g4xx_ll_gpio.o
-      1060         18          0          0          0      10388   stm32g4xx_ll_rcc.o
-       244          0          0          0          0       5101   stm32g4xx_ll_spi.o
-      2466          0          0          0          0      10818   stm32g4xx_ll_tim.o
-       524          0         48          0          0       5189   stm32g4xx_ll_usart.o
-        70          0          0          0          0      11257   stm32g4xx_ll_usb.o
-        18          0         24          4          0       2700   system_stm32g4xx.o
-      1344          0         20          0          0       9095   tim.o
-       562          0          0          0          0       4902   usart.o
-       156          0          0          0        732       5025   usb.o
+       330          0          0          8          4       8433   stm32g4xx_hal.o
+      5196          0          0          0          0      22047   stm32g4xx_hal_adc.o
+       684          0          0          0          0      19457   stm32g4xx_hal_adc_ex.o
+       478          0          0          0          0       9423   stm32g4xx_hal_cortex.o
+      1222          0          0          0          0       7784   stm32g4xx_hal_dma.o
+       872          0          0          0          0       5321   stm32g4xx_hal_gpio.o
+        82          0          0          0          0       1652   stm32g4xx_hal_msp.o
+       404          0          0          0          0      13718   stm32g4xx_hal_pcd.o
+        58          0          0          0          0       5100   stm32g4xx_hal_pcd_ex.o
+       454          0          0          0          0       7816   stm32g4xx_hal_pwr_ex.o
+      3188          0          0          0          0       9405   stm32g4xx_hal_rcc.o
+      1114          0          0          0          0      10916   stm32g4xx_hal_rcc_ex.o
+        58          0          0          0          0       1208   stm32g4xx_it.o
+       874          0          0          0          0       5139   stm32g4xx_ll_gpio.o
+      1060         18          0          0          0      10389   stm32g4xx_ll_rcc.o
+       244          0          0          0          0       5102   stm32g4xx_ll_spi.o
+      2466          0          0          0          0      10819   stm32g4xx_ll_tim.o
+       524          0         48          0          0       5190   stm32g4xx_ll_usart.o
+        70          0          0          0          0      11258   stm32g4xx_ll_usb.o
+        18          0         24          4          0       2701   system_stm32g4xx.o
+      1344          0         20          0          0       9096   tim.o
+       562          0          0          0          0       4903   usart.o
+       156          0          0          0        732       5026   usb.o
 
     ----------------------------------------------------------------------
-     28220         44      13902         12      10396     235770   Object Totals
+     28220         44      13902         12      10396     235858   Object Totals
          0          0         32          0          0          0   (incl. Generated)
        210          0          2          0          8          0   (incl. Padding)
 
@@ -4615,8 +4615,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     28698         68      13902         12      10492     235818   Grand Totals
-     28698         68      13902         12      10492     235818   ELF Image Totals
+     28698         68      13902         12      10492     235906   Grand Totals
+     28698         68      13902         12      10492     235906   ELF Image Totals
      28698         68      13902         12          0          0   ROM Totals
 
 ==============================================================================
