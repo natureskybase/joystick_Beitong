@@ -94,6 +94,8 @@ void Error_Handler(void);
 #define BACK_GPIO_Port GPIOA
 #define CLEAR_Pin LL_GPIO_PIN_7
 #define CLEAR_GPIO_Port GPIOA
+#define BAT_CHECK_Pin LL_GPIO_PIN_0
+#define BAT_CHECK_GPIO_Port GPIOB
 #define LED_Pin LL_GPIO_PIN_2
 #define LED_GPIO_Port GPIOB
 #define HL_Pin LL_GPIO_PIN_11
@@ -128,7 +130,7 @@ void Error_Handler(void);
 #define SPI1_CS_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+void SystemClock_Config(void);
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

@@ -60,7 +60,7 @@ void button_get(void);
 extern uint32_t button_state;
 extern uint32_t button_state_extence;
 extern spindle joystick_spin;
-
+extern uint16_t adc_vals[5];
 
 
 

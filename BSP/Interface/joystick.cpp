@@ -2,9 +2,9 @@
  * @Author: skybase
  * @Date: 2024-08-14 00:52:05
  * @LastEditors: skybase
- * @LastEditTime: 2024-09-27 02:14:14
+ * @LastEditTime: 2024-10-01 22:07:22
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
- * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystickBeitong\BSP\joystick.cpp
+ * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\joystick.cpp
  */
 #include "joystick.h"
 
@@ -12,7 +12,7 @@ uint32_t button_state = 0x0000;
 uint32_t button_state_extence = 0x0000;
 spindle joystick_spin = {0};
 
-uint16_t adc_vals[4] = {0};
+uint16_t adc_vals[5] = {0};
 
 button button_RT = button(RT_GPIO_Port, RT_Pin);
 button button_RB = button(RB_GPIO_Port, RB_Pin);
@@ -56,7 +56,52 @@ static uint64_t test_num1 = 0, test_num2 = 0, test_num3 = 0;
 
 void stickin(uint16_t x, uint16_t y)
 {
-    LCD_ShowIntNum(10, 30, test_num1++, 4, RED, WHITE, 16);
+    // LCD_ShowIntNum(10, 30, test_num1++, 4, RED, WHITE, 16);
+    LCD_Fill(0, 0, 160, 80, BLACK);
+
+    // set HOME as awake trigger
+    {
+        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+        LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
+
+        GPIO_InitStruct.Pin = HOME_Pin;
+        GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+        GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+        LL_GPIO_Init(HOME_GPIO_Port, &GPIO_InitStruct);
+
+        LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE5);
+
+        EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_5;
+        EXTI_InitStruct.LineCommand = ENABLE;
+        EXTI_InitStruct.Mode = LL_EXTI_MODE_EVENT;
+        EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_FALLING;
+        LL_EXTI_Init(&EXTI_InitStruct);
+    }
+
+    HAL_SuspendTick(); // 停止系统滴答计时器
+    // CLEAR_BIT(SysTick->CTRL, SysTick_CTRL_ENABLE_Msk);//失能系统滴答定时器
+    HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFE); // 电压调节器为低功耗模式，WFE指令进入停止模式
+    SystemClock_Config();                                               // 重新配置系统时钟
+
+    // SET_BIT(SysTick->CTRL, SysTick_CTRL_ENABLE_Msk);//使能系统滴答定时器
+    HAL_ResumeTick(); // 恢复系统滴答计时器
+    LCD_Fill(0, 0, 160, 80, WHITE);
+    // set HOME back to input
+    {
+        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+        LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
+
+        GPIO_InitStruct.Pin = HOME_Pin;
+        GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+        GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+        LL_GPIO_Init(HOME_GPIO_Port, &GPIO_InitStruct);
+
+        EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_15;
+        EXTI_InitStruct.LineCommand = DISABLE;
+        EXTI_InitStruct.Mode = LL_EXTI_MODE_EVENT;
+        EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_FALLING;
+        LL_EXTI_Init(&EXTI_InitStruct);
+    }
 }
 
 void button_init()
@@ -68,7 +113,6 @@ void button_init()
     sticktest.EventRegister(stickin, 1000, 1000, sticktest.TOIN, 0);
     sticktest.eventnum = 1;
 }
-
 
 void button_update_test()
 {
@@ -88,11 +132,11 @@ extern "C"
 
         // !10ms的中断用于判断按键
         button_init();
-        HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 4);
+        HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 5);
         sticktest.dead_response = 500;
         sticktest.dir_x = adc_vals[0];
         sticktest.dir_y = adc_vals[1];
-        
+
         button_update_test();
         //        static uint32_t _gpio_state_a_last = 0;
         //        static uint32_t _gpio_state_b_last = 0;
