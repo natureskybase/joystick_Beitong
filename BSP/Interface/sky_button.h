@@ -2,9 +2,9 @@
  * @Author: skybase
  * @Date: 2024-09-25 00:06:55
  * @LastEditors: skybase
- * @LastEditTime: 2024-09-26 23:43:36
+ * @LastEditTime: 2024-10-02 21:57:56
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
- * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystickBeitong\BSP\sky_button.h
+ * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\sky_button.h
  */
 #ifndef BUTTON_H_
 #define BUTTON_H_
@@ -23,28 +23,40 @@ public:
         BTUp,
     } PressType;
 
-    int button_id;
+    int button_id = 0;
     int button_priority = 0;
     int button_is_down = 0;
     int button_state = 0;
     int button_pressed_cal = 0;
     int dead_delay;
 
-    ButtonEventCallbackType button_call[3];
+    ButtonEventCallbackType button_call[3]={nullptr,nullptr,nullptr};
 
     GPIO_TypeDef *GpioPort;
     uint32_t GpioPin;
 
-    button(GPIO_TypeDef *_GpioPort, uint32_t _GpioPin)
+    button(GPIO_TypeDef *_GpioPort, uint32_t _GpioPin, int id)
     {
         GpioPort = _GpioPort;
         GpioPin = _GpioPin;
+        button_id = id;
+    }
+    bool operator==(const button &other) const
+    {
+        if (this->button_id == other.button_id)
+        {
+            return true;
+        }
+
+        return false;
     }
 
-    void button_update();
     void buttonCallRegist(ButtonEventCallbackType call, PressType type);
     int buttonStateMachine();
     void buttonStateUpdate();
+
+private:
+    void button_update();
 };
 
 // class Buttons
@@ -81,9 +93,8 @@ public:
     int event_type[100] = {0};
     uint16_t eventnum = 0;
 
-
-    void EventRegister(StickEventCallbackType call,uint16_t x, uint16_t y, EventType type, int priority);
-    void  StickStateMachine();
+    void EventRegister(StickEventCallbackType call, uint16_t x, uint16_t y, EventType type, int priority);
+    void StickStateMachine();
     void StickStateUpdate();
 };
 

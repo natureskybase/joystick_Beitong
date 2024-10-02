@@ -45,6 +45,7 @@
         "xutility": "c",
         "iostream": "cpp",
         "lcd.h": "c",
-        "lcdfont.h": "c"
+        "lcdfont.h": "c",
+        "sky_button.h": "c"
     }
 }

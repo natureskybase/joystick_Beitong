@@ -1,8 +1,61 @@
 Dependencies for Project 'joystickBeitong', Target 'joystickBeitong': (DO NOT MODIFY !)
 CompilerVersion: 6210000::V6.21::ARMCLANG
 F (startup_stm32g431xx.s)(0x66FC0257)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G431xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o joystickbeitong/startup_stm32g431xx.o)
-F (..\Core\Src\maincpp.cpp)(0x66FA772C)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/maincpp.o -MD)
-F (../Core/Src/main.c)(0x66FBD32D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/main.o -MD)
+F (..\Core\Src\maincpp.cpp)(0x66FD597E)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/maincpp.o -MD)
+I (..\Core\Inc\main.hp.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
+I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x66B5C4D1)
+I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
+I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
+I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x64F9642C)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x6569B00C)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
+I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stddef.h)(0x64F9642C)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usart.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
+I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
+I (..\Core\Inc\adc.h4.\BSP\Interface\sky_button.hl.\BSP\menu\sky_menu.h)(0x00000000)
+I (..\BSP\LCD\lcd.h)(0x66FC03A4)
+F (../Core/Src/main.c)(0x66FD4909)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/main.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -53,8 +106,9 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
 I (..\Core\Inc\adc.h4.\Core\Inc\dma.hc.\Core\Inc\spi.h)(0x00000000)
 I (..\Core\Inc\tim.h4.\Core\Inc\usart.h\.\Core\Inc\usb.h)(0x00000000)
-I (..\Core\Inc\gpio.h..\BSP\LCD\lcd.h..\BSP\LCD\lcd_init.h)(0x00000000)
-F (../Core/Src/gpio.c)(0x66FC0254)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/gpio.o -MD)
+I (..\Core\Inc\gpio.h..\Core\Inc\maincpp.hC.\BSP\LCD\lcd.h)(0x00000000)
+I (..\BSP\LCD\lcd_init.h)(0x66FC03A4)
+F (../Core/Src/gpio.c)(0x66FC0254)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/gpio.o -MD)
 I (..\Core\Inc\main.hi.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -63,12 +117,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -103,7 +157,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/adc.c)(0x66FBD316)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/adc.o -MD)
+F (../Core/Src/adc.c)(0x66FC03D7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/adc.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -112,12 +166,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -152,7 +206,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/dma.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/dma.o -MD)
+F (../Core/Src/dma.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/dma.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -161,12 +215,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -201,7 +255,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/spi.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/spi.o -MD)
+F (../Core/Src/spi.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/spi.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -210,12 +264,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -250,7 +304,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/tim.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/tim.o -MD)
+F (../Core/Src/tim.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/tim.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -259,12 +313,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -299,7 +353,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/usart.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/usart.o -MD)
+F (../Core/Src/usart.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/usart.o -MD)
 I (..\Core\Inc\main.hc.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -308,12 +362,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -348,7 +402,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/usb.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/usb.o -MD)
+F (../Core/Src/usb.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/usb.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -357,12 +411,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -397,7 +451,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/stm32g4xx_it.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_it.o -MD)
+F (../Core/Src/stm32g4xx_it.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_it.o -MD)
 I (..\Core\Inc\main.h4.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -406,12 +460,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -447,7 +501,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_it.h)(0x66FA772C)
-F (../Core/Src/stm32g4xx_hal_msp.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_msp.o -MD)
+F (../Core/Src/stm32g4xx_hal_msp.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_msp.o -MD)
 I (..\Core\Inc\main.h4.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -456,12 +510,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -496,17 +550,17 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Core/Src/system_stm32g4xx.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/system_stm32g4xx.o -MD)
+F (../Core/Src/system_stm32g4xx.c)(0x66FA772C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/system_stm32g4xx.o -MD)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -532,7 +586,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (..\BSP\Interface\joystick.cpp)(0x66FC022E)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/joystick.o -MD)
+F (..\BSP\Interface\joystick.cpp)(0x66FD56F3)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/joystick.o -MD)
 I (..\BSP\Interface\joystick.hp.\Core\Inc\main.h)(0x00000000)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -586,7 +640,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
 I (..\Core\Inc\adc.h4.\BSP\Interface\sky_button.hl.\BSP\LCD\lcd.h)(0x00000000)
-F (..\BSP\Interface\sky_button.cpp)(0x66FA79E4)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/sky_button.o -MD)
+F (..\BSP\Interface\sky_button.cpp)(0x66FD5C69)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/sky_button.o -MD)
 I (..\BSP\Interface\sky_button.hp.\Core\Inc\main.h)(0x00000000)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -598,12 +652,12 @@ I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x6569B00C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stddef.h)(0x64F9642C)
@@ -639,7 +693,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (..\BSP\LCD\lcd.c)(0x66FA79E4)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/lcd.o -MD)
+F (..\BSP\LCD\lcd.c)(0x66FC03A4)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/lcd.o -MD)
 I (..\Core\Inc\main.h\.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -648,12 +702,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -689,7 +743,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
 I (..\BSP\LCD\lcd_init.hH.\BSP\LCD\lcdfont.h)(0x00000000)
-F (..\BSP\LCD\lcd_init.c)(0x66FA79E4)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/lcd_init.o -MD)
+F (..\BSP\LCD\lcd_init.c)(0x66FC03A4)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/lcd_init.o -MD)
 I (..\Core\Inc\main.ht.\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x00000000)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -698,12 +752,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -738,18 +792,20 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_utils.o -MD)
+F (..\BSP\menu\sky_menu.cpp)(0x66FD3130)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O0 -ffunction-sections -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/sky_menu.o -MD)
+I (..\BSP\menu\sky_menu.h)(0x66FD42A6)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_utils.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x66B5C4D2)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -778,18 +834,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_exti.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_exti.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -815,18 +871,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_gpio.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_gpio.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -853,7 +909,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_adc.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_adc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -862,12 +918,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -889,7 +945,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_adc_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_adc_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -898,12 +954,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -925,18 +981,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_adc.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_adc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -962,7 +1018,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -971,12 +1027,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -998,7 +1054,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_rcc.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_rcc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1007,12 +1063,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1034,7 +1090,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_rcc_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_rcc_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1043,12 +1099,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1070,7 +1126,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_flash.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_flash.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1079,12 +1135,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1106,7 +1162,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_flash_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_flash_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1115,12 +1171,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1142,7 +1198,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_flash_ramfunc.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_flash_ramfunc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1151,12 +1207,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1178,7 +1234,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_gpio.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_gpio.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1187,12 +1243,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1214,7 +1270,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_exti.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_exti.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1223,12 +1279,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1250,7 +1306,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_dma.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_dma.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1259,12 +1315,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1286,7 +1342,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_dma_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_dma_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1295,12 +1351,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1322,7 +1378,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pwr.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pwr.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1331,12 +1387,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1358,7 +1414,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pwr_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pwr_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1367,12 +1423,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1394,7 +1450,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_cortex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_cortex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1403,12 +1459,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1430,18 +1486,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_spi.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_spi.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_spi.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_spi.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -1469,18 +1525,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_dma.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_dma.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -1508,7 +1564,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_tim.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_tim.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1517,12 +1573,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1544,7 +1600,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_tim_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_tim_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1553,12 +1609,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1580,18 +1636,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_tim.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_tim.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -1618,18 +1674,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usart.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_usart.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usart.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_usart.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usart.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -1657,18 +1713,18 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_rcc.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_rcc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
@@ -1694,7 +1750,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pcd.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pcd.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1703,12 +1759,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1730,7 +1786,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pcd_ex.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_hal_pcd_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1739,12 +1795,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
@@ -1766,7 +1822,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x66B5C4D1)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x66B5C4D1)
-F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_usb.o -MD)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.c)(0x66B5C4D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../Core/Inc -I ../BSP -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../BSP/LCD -I ../BSP/Interface -I ../BSP/menu-I./RTE/_joystickBeitong-IC:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o joystickbeitong/stm32g4xx_ll_usb.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x66B5C4D1)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x66FA772C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x66B5C4D1)
@@ -1775,12 +1831,12 @@ I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x66B5C4CE)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x64F9642C)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569B010)
-I (D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
+I (d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h)(0x66B5C4D1)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x66B5C4CE)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x66B5C4D1)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)

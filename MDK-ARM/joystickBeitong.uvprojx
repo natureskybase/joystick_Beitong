@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_FULL_LL_DRIVER,USE_HAL_DRIVER,STM32G431xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../BSP;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;../BSP/LCD;../BSP/Interface</IncludePath>
+              <IncludePath>../Core/Inc;../BSP;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;../BSP/LCD;../BSP/Interface;..\BSP\menu</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -535,6 +535,11 @@
               <FileName>lcd_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\LCD\lcd_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>sky_menu.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\BSP\menu\sky_menu.cpp</FilePath>
             </File>
           </Files>
         </Group>

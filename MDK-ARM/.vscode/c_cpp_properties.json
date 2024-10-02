@@ -11,6 +11,7 @@
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Drivers\\CMSIS\\Include",
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\BSP\\LCD",
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\BSP\\Interface",
+                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\BSP\\menu",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",

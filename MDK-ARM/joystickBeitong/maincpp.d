@@ -1,1 +1,54 @@
-joystickbeitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Inc\maincpp.h
+joystickbeitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Inc\maincpp.h \
+  ..\Core\Inc\main.h ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
+  ..\Core\Inc\stm32g4xx_hal_conf.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h \
+  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h \
+  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h \
+  ..\Drivers\CMSIS\Include\core_cm4.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__config \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
+  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
+  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stddef.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stddef.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usart.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
+  ..\Core\Inc\adc.h ..\BSP\Interface\sky_button.h ..\BSP\menu\sky_menu.h \
+  ..\BSP\LCD\lcd.h
