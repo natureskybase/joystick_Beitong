@@ -20,20 +20,17 @@ int button::buttonStateMachine()
     if (button_is_down && button_pressed_cal == 0)
     {
         button_state = 1;
-        _dead_time++;
         button_pressed_cal++;
         return 1;
     }
     else if (button_pressed_cal > 0)
     {
         button_state = 2;
-        _dead_time++;
         button_pressed_cal++;
     }
     if (!button_is_down && button_pressed_cal != 0)
     {
         button_state = 3;
-        _dead_time = 0;
         button_pressed_cal = 0;
         return 0;
     }
@@ -58,9 +55,9 @@ void button::buttonStateUpdate()
     }
 }
 
-void button::buttonCallRegist(ButtonEventCallbackType call, PressType type)
+void button::buttonCallRegist(ButtonEventCallbackType call, int type)
 {
-    button_call[type] = call;
+    button_call[type - 1] = call;
 }
 
 //!*************************************************************************/

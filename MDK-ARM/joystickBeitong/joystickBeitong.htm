@@ -3,7 +3,7 @@
 <title>Static Call Graph - [joystickBeitong\joystickBeitong.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image joystickBeitong\joystickBeitong.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed Oct  2 22:46:07 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed Oct  2 23:42:34 2024
 <BR><P>
 <H3>Maximum Stack Usage =        380 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1500,8 +1500,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;button::buttonStateUpdate()
 </UL>
 
-<P><STRONG><a name="[181]"></a>button::buttonCallRegist(void (*)(int), button::PressType)</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, sky_button.o(.text._ZN6button16buttonCallRegistEPFviENS_9PressTypeE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = button::buttonCallRegist(void (*)(int), button::PressType)
+<P><STRONG><a name="[181]"></a>button::buttonCallRegist(void (*)(int), int)</STRONG> (Thumb, 24 bytes, Stack size 12 bytes, sky_button.o(.text._ZN6button16buttonCallRegistEPFviEi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = button::buttonCallRegist(void (*)(int), int)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;maincpp
 </UL>
@@ -1609,7 +1609,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NodeManager::add_node(node*, node*, node*, node*, node*)
-<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;button::buttonCallRegist(void (*)(int), button::PressType)
+<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;button::buttonCallRegist(void (*)(int), int)
 <LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;joystick::EventRegister(void (*)(unsigned short, unsigned short), unsigned short, unsigned short, joystick::EventType, int)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main

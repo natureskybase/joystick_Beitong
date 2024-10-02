@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-09-25 00:06:55
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-02 21:57:56
+ * @LastEditTime: 2024-10-02 23:41:40
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\sky_button.h
  */
@@ -11,17 +11,19 @@
 
 #include "main.h"
 
+typedef enum
+{
+    BTDown = 1,
+    BTContinue,
+    BTUp,
+} PressType;
+
 class button
 {
 public:
     typedef void (*ButtonEventCallbackType)(int);
 
-    typedef enum
-    {
-        BTDown = 0,
-        BTContinue,
-        BTUp,
-    } PressType;
+
 
     int button_id = 0;
     int button_priority = 0;
@@ -51,7 +53,7 @@ public:
         return false;
     }
 
-    void buttonCallRegist(ButtonEventCallbackType call, PressType type);
+    void buttonCallRegist(ButtonEventCallbackType call, int type);
     int buttonStateMachine();
     void buttonStateUpdate();
 

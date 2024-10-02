@@ -143,10 +143,10 @@ int maincpp(void)
 {
 	sticktest.EventRegister(stickin, 1000, 1000, sticktest.TOIN, 0);
 
-	button_LEFT.buttonCallRegist(button_dowm, button::BTDown);
-	button_UP.buttonCallRegist(button_dowm, button::BTDown);
-	button_DOWN.buttonCallRegist(button_dowm, button::BTDown);
-	button_RIGHT.buttonCallRegist(button_dowm, button::BTDown);
+	button_LEFT.buttonCallRegist(button_dowm, BTDown);
+	button_UP.buttonCallRegist(button_dowm, BTDown);
+	button_DOWN.buttonCallRegist(button_dowm, BTDown);
+	button_RIGHT.buttonCallRegist(button_dowm, BTDown);
 
 	nodemanager.add_node(&cs1, &cs1, &cs1_1, &cs4, &cs2);
 	nodemanager.add_node(&cs2, &cs2, &cs2_1, &cs1, &cs3);
