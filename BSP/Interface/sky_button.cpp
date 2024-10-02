@@ -19,9 +19,17 @@ int button::buttonStateMachine()
     button_state = 0;
     if (button_is_down && button_pressed_cal == 0)
     {
-        button_state = 1;
-        button_pressed_cal++;
-        return 1;
+        if (conf == 1)
+        {
+            button_state = 1;
+            button_pressed_cal++;
+            return 1;
+        }
+        else
+        {
+            conf = 1;
+            return 0;
+        }
     }
     else if (button_pressed_cal > 0)
     {
@@ -32,6 +40,7 @@ int button::buttonStateMachine()
     {
         button_state = 3;
         button_pressed_cal = 0;
+        conf = 0;
         return 0;
     }
 

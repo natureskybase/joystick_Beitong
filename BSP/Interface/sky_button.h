@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-09-25 00:06:55
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-02 23:41:40
+ * @LastEditTime: 2024-10-02 23:57:39
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\sky_button.h
  */
@@ -28,6 +28,7 @@ public:
     int button_id = 0;
     int button_priority = 0;
     int button_is_down = 0;
+    int conf = 0;
     int button_state = 0;
     int button_pressed_cal = 0;
     int dead_delay;
