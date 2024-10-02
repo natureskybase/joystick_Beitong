@@ -9,12 +9,12 @@ joystickbeitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Inc\maincpp.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__config \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stddef.h \
@@ -51,4 +51,10 @@ joystickbeitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Inc\maincpp.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
   ..\Core\Inc\adc.h ..\BSP\Interface\sky_button.h ..\BSP\menu\sky_menu.h \
-  ..\BSP\LCD\lcd.h
+  ..\BSP\LCD\lcd.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdio.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\cstdio \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__assert \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__verbose_abort \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__availability

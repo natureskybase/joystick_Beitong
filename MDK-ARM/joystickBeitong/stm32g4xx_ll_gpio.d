@@ -5,12 +5,12 @@ joystickbeitong/stm32g4xx_ll_gpio.o: \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_armclang.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
-  D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
+  d:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Core\Inc\stm32g4xx_hal_conf.h \

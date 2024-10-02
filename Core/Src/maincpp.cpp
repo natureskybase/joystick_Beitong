@@ -3,6 +3,9 @@
 #include "sky_menu.h"
 #include "lcd.h"
 
+#include <stdio.h>
+#include <cstdio>
+
 uint16_t adc_vals[5] = {0};
 static int bt_id = 0;
 button button_RT = button(RT_GPIO_Port, RT_Pin, bt_id++);
@@ -37,6 +40,11 @@ node cs4 = node(4);
 node cs1_1 = node(5);
 node cs1_2 = node(6);
 node cs2_1 = node(7);
+
+float remap(float x, float y, float x1, float y1, float value)
+{
+	return x1 + (value - x) * (y1 - x1) / (y - x);
+}
 
 void button_state_update()
 {
@@ -139,6 +147,14 @@ void button_update_test()
 	sticktest.StickStateUpdate();
 }
 
+void gui_update()
+{
+	LCD_ShowIntNum(10, 30, nodemanager.now_node->id, 4, RED, WHITE, 16);
+	char battery_inf[50] = {0};
+	// sprintf(battery_inf, "bat is %3d%%", (int)remap(1800, 1960, 0, 100, (float)adc_vals[4]));
+	snprintf(battery_inf, sizeof(battery_inf), "bat is %3d%%", (int)remap(180, 196, 0, 100, (float)(adc_vals[4]/10)));
+	LCD_ShowString(50, 0, (uint8_t*)battery_inf, GREEN, BLUE, 16, 0);
+}
 int maincpp(void)
 {
 	sticktest.EventRegister(stickin, 1000, 1000, sticktest.TOIN, 0);
@@ -160,8 +176,7 @@ int maincpp(void)
 
 	while (1)
 	{
-		LCD_ShowIntNum(50, 30, nodemanager.now_node->id, 4, RED, WHITE, 16);
-		LCD_ShowIntNum(100, 30, test_num1, 4, RED, WHITE, 16);
+		gui_update();
 	}
 
 	return 0;
