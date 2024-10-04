@@ -17,7 +17,7 @@ void button::button_update()
 int button::buttonStateMachine()
 {
     button_state = 0;
-    if (button_is_down && button_pressed_cal == 0)
+    if (button_is_down && button_pressed_cal == 0 && --dead_pluse <= 0)
     {
         if (conf == 1)
         {
@@ -40,6 +40,7 @@ int button::buttonStateMachine()
     {
         button_state = 3;
         button_pressed_cal = 0;
+        dead_pluse = 3;
         conf = 0;
         return 0;
     }

@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-09-25 00:06:55
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-02 23:57:39
+ * @LastEditTime: 2024-10-04 09:29:34
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\sky_button.h
  */
@@ -29,6 +29,7 @@ public:
     int button_priority = 0;
     int button_is_down = 0;
     int conf = 0;
+    int dead_pluse = 0; //在按键抬起后多少个update周期不响应按下事件
     int button_state = 0;
     int button_pressed_cal = 0;
     int dead_delay;
