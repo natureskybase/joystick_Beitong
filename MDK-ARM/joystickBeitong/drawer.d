@@ -1,4 +1,4 @@
-joystickbeitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Inc\maincpp.h \
+joystickbeitong/drawer.o: ..\BSP\menu\drawer.cpp ..\BSP\menu\drawer.h \
   ..\Core\Inc\main.h ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Core\Inc\stm32g4xx_hal_conf.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
@@ -50,11 +50,4 @@ joystickbeitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Inc\maincpp.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
-  ..\Core\Inc\adc.h ..\BSP\Interface\sky_button.h ..\BSP\menu\sky_menu.h \
-  ..\BSP\menu\drawer.h ..\BSP\LCD\lcd.h \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdio.h \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\cstdio \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__assert \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__verbose_abort \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__availability
+  ..\BSP\LCD\lcd.h

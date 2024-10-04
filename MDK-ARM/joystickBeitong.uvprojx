@@ -541,6 +541,11 @@
               <FileType>8</FileType>
               <FilePath>..\BSP\menu\sky_menu.cpp</FilePath>
             </File>
+            <File>
+              <FileName>drawer.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\BSP\menu\drawer.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

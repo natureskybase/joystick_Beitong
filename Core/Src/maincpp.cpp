@@ -1,6 +1,7 @@
 #include "maincpp.h"
 #include "sky_button.h"
 #include "sky_menu.h"
+#include "drawer.h"
 #include "lcd.h"
 
 #include <stdio.h>
@@ -40,6 +41,8 @@ node cs4 = node(4);
 node cs1_1 = node(5);
 node cs1_2 = node(6);
 node cs2_1 = node(7);
+
+Drawer lcd_drawer = Drawer();
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -152,8 +155,9 @@ void gui_update()
 	LCD_ShowIntNum(10, 30, nodemanager.now_node->id, 4, RED, WHITE, 16);
 	char battery_inf[50] = {0};
 	// sprintf(battery_inf, "bat is %3d%%", (int)remap(1800, 1960, 0, 100, (float)adc_vals[4]));
-	snprintf(battery_inf, sizeof(battery_inf), "bat is %3d%%", (int)remap(180, 196, 0, 100, (float)(adc_vals[4]/10)));
-	LCD_ShowString(50, 0, (uint8_t*)battery_inf, GREEN, BLUE, 16, 0);
+	snprintf(battery_inf, sizeof(battery_inf), "bat is %3d%%", (int)remap(180, 196, 0, 100, (float)(adc_vals[4] / 10)));
+	LCD_ShowString(50, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
+	lcd_drawer.draw_cube(70, 50, 20, 2,BLACK);
 }
 int maincpp(void)
 {
