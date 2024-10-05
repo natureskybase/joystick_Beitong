@@ -43,7 +43,7 @@ node cs1_2 = node(6);
 node cs2_1 = node(7);
 
 Drawer lcd_drawer = Drawer();
-Menu lcd_menu = Menu(&nodemanager,&lcd_drawer);
+Menu lcd_menu = Menu(&nodemanager, &lcd_drawer);
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -151,13 +151,17 @@ void button_update_test()
 	sticktest.StickStateUpdate();
 }
 
+void node_change(int i)
+{
+	LCD_Fill(0, 20, 160, 80, WHITE);
+	lcd_menu.draw_menu();
+}
 void gui_update()
 {
-	LCD_ShowIntNum(10, 30, nodemanager.now_node->id, 4, RED, WHITE, 16);
-	char battery_inf[50] = {0};
-	// sprintf(battery_inf, "bat is %3d%%", (int)remap(1800, 1960, 0, 100, (float)adc_vals[4]));
-	snprintf(battery_inf, sizeof(battery_inf), "bat is %3d%%", (int)remap(180, 196, 0, 100, (float)(adc_vals[4] / 10)));
-	LCD_ShowString(50, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
+	LCD_ShowIntNum(68, 30, nodemanager.now_node->id, 2, RED, WHITE, 16);
+	char battery_inf[10] = {0};
+	snprintf(battery_inf, sizeof(battery_inf), "%3d%%", (int)(remap(180, 196, 0, 10, (float)(adc_vals[4] / 10))) * 10);
+	LCD_ShowString(128, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
 }
 int maincpp(void)
 {
@@ -178,12 +182,17 @@ int maincpp(void)
 
 	nodemanager.now_node = &cs1;
 	nodemanager.last_node = &cs1;
+	nodemanager.node_change_trig = node_change;
 
+	lcd_menu.draw_menu();
 	while (1)
 	{
 		gui_update();
-		lcd_menu.draw_menu();
-		lcd_drawer.lcd_update();
+		//		LCD_Fill(0, 0, 160, 80, RED);
+		//		LCD_Fill(0, 0, 160, 80, GREEN);
+		//		LCD_Fill(0, 0, 160, 80, BLUE);
+		// lcd_menu.draw_menu();
+		// lcd_drawer.lcd_update();
 		// lcd_drawer.draw_cube(80, 40, 30, 3, BLACK, Overwrite);
 	}
 
