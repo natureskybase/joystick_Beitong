@@ -16,6 +16,8 @@
 "joystickbeitong\sky_button.o"
 "joystickbeitong\lcd.o"
 "joystickbeitong\lcd_init.o"
+"joystickbeitong\sky_menu.o"
+"joystickbeitong\drawer.o"
 "joystickbeitong\stm32g4xx_ll_utils.o"
 "joystickbeitong\stm32g4xx_ll_exti.o"
 "joystickbeitong\stm32g4xx_ll_gpio.o"

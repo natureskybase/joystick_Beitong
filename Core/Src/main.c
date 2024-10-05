@@ -28,6 +28,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "maincpp.h"
 #include "lcd.h"
 #include "lcd_init.h"
 
@@ -124,7 +125,7 @@ int main(void)
   while (1)
   {
     // HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 4);
-
+    maincpp();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

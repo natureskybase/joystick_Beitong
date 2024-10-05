@@ -14,29 +14,38 @@ void button::button_update()
     button_is_down = !(LL_GPIO_IsInputPinSet(GpioPort, GpioPin));
 }
 
-    int button::buttonStateMachine()
+int button::buttonStateMachine()
 {
-    static int _dead_time = 0;
     button_state = 0;
-    if (button_is_down && _dead_time == 0)
+    if (button_is_down && button_pressed_cal == 0 && --dead_pluse <= 0)
     {
-        button_state = 1;
-        _dead_time++;
-        return 0;
+        if (conf == 1)
+        {
+            button_state = 1;
+            button_pressed_cal++;
+            return 1;
+        }
+        else
+        {
+            conf = 1;
+            return 0;
+        }
     }
-    else if (_dead_time > 0)
+    else if (button_pressed_cal > 0)
     {
         button_state = 2;
-        _dead_time++;
+        button_pressed_cal++;
     }
-    if (!button_is_down && _dead_time != 0)
+    if (!button_is_down && button_pressed_cal != 0)
     {
         button_state = 3;
-        _dead_time = 0;
+        button_pressed_cal = 0;
+        dead_pluse = 3;
+        conf = 0;
         return 0;
     }
 
-    return _dead_time;
+    return button_pressed_cal;
 }
 
 void button::buttonStateUpdate()
@@ -45,15 +54,21 @@ void button::buttonStateUpdate()
     button_pressed_cal = buttonStateMachine();
     if (!!button_state)
     {
-        button_call[button_state - 1](button_pressed_cal);
+        if (button_call[button_state - 1] != nullptr)
+            button_call[button_state - 1](button_pressed_cal);
+        else
+            return;
+    }
+    else
+    {
+        button_pressed_cal = 0;
     }
 }
 
-void button::buttonCallRegist(ButtonEventCallbackType call, PressType type)
+void button::buttonCallRegist(ButtonEventCallbackType call, int type)
 {
-    button_call[type] = call;
+    button_call[type - 1] = call;
 }
-
 
 //!*************************************************************************/
 

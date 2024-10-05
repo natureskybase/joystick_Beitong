@@ -2,9 +2,9 @@
  * @Author: skybase
  * @Date: 2024-08-14 00:52:25
  * @LastEditors: skybase
- * @LastEditTime: 2024-09-26 23:52:43
+ * @LastEditTime: 2024-10-02 17:23:48
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
- * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystickBeitong\BSP\joystick.h
+ * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\joystick.h
  */
 #ifndef JOYSTICK_H_
 #define JOYSTICK_H_
@@ -60,7 +60,6 @@ void button_get(void);
 extern uint32_t button_state;
 extern uint32_t button_state_extence;
 extern spindle joystick_spin;
-extern uint16_t adc_vals[5];
 
 
 
