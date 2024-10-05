@@ -43,7 +43,7 @@ node cs1_2 = node(6);
 node cs2_1 = node(7);
 
 Drawer lcd_drawer = Drawer();
-Menu lcd_menu = Menu(&nodemanager);
+Menu lcd_menu = Menu(&nodemanager,&lcd_drawer);
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -177,12 +177,14 @@ int maincpp(void)
 	nodemanager.add_node(&cs2_1, &cs2, &cs2_1, &cs2_1, &cs2_1);
 
 	nodemanager.now_node = &cs1;
+	nodemanager.last_node = &cs1;
 
 	while (1)
 	{
 		gui_update();
 		lcd_menu.draw_menu();
-		//lcd_drawer.draw_cube(80, 40, 30, 3, BLACK, Overwrite);
+		lcd_drawer.lcd_update();
+		// lcd_drawer.draw_cube(80, 40, 30, 3, BLACK, Overwrite);
 	}
 
 	return 0;

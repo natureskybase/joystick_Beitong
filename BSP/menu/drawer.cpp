@@ -1,5 +1,30 @@
 #include "drawer.h"
 
+void Drawer::lcd_update()
+{
+    // for (int i = 0; i < display_size_x; ++i)
+    // {
+    //     for (int j = 0; j < display_size_y; ++j)
+    //     {
+    //         if(LCD_GRAM[i][j])
+    //         {
+    //             pointdraw(i, j, LCD_GRAM[i][j]);
+    //             // LCD_GRAM_Last[i][j] = LCD_GRAM[i][j];
+    //         }
+    //         else
+    //         {
+    //             continue;
+    //         }
+    //     }
+    // }
+
+}
+void Drawer::lcd_draw(int x,int y, uint16_t color)
+{
+    // LCD_GRAM[x][y] = color;
+}
+
+
 void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
 {
     uint16_t t;
@@ -35,7 +60,8 @@ void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
     {
         if (uRow >= 0 && uRow <= display_size_x && uCol >= 0 && uCol <= display_size_y) // 检查是否在屏幕范围内
         {
-            this->pointdraw(uRow, uCol, color); // 在当前点位置画点
+            // this->pointdraw(uRow, uCol, color); // 在当前点位置画点
+            lcd_draw(uRow, uCol, color);
         }
         xerr += delta_x;
         yerr += delta_y;
@@ -54,21 +80,7 @@ void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
 
 void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color, drawer_enum mode)
 {
-    // static int _x1 = 0, _x2 = 0, _y1 = 0, _y2 = 0;
-    // int conditon = (_x1 != x1 &&_x2 != x2 && _y1 != y1 && _y2 != y2);
-    // if (mode == Overwrite)
-    // {
-    //     draw_line(_x1, _y1, _x2, _y2, background_color);
-    //     draw_line(x1, y1, x2, y2, color);
-    // }
-    // else
-    // {
     draw_line(x1, y1, x2, y2, color);
-    // }
-    // _x1 = x1;
-    // _x2 = x2;
-    // _y1 = y1;
-    // _y2 = y2;
 }
 
 void Drawer::draw_cube(int x, int y, int length, int border_width, uint16_t color)

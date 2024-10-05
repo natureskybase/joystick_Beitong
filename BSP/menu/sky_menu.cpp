@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-05 14:57:13
+ * @LastEditTime: 2024-10-05 15:26:51
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
@@ -21,6 +21,28 @@ void NodeManager::add_node(node *now_node, node *father, node *child, node *left
 int NodeManager ::node_check_num()
 {
     node *_node = now_node;
+    int id = _node->id;
+    int num = 1;
+
+    int _safe_count = 100;
+    while (_safe_count--)
+    {
+        _node = _node->left_node;
+        if (_node->id != id)
+        {
+            num++;
+        }
+        else
+        {
+            break;
+        }
+    }
+    return num;
+}
+
+int NodeManager ::node_check_num(node *_node_)
+{
+    node *_node = _node_;
     int id = _node->id;
     int num = 1;
 
@@ -78,18 +100,25 @@ int NodeManager::node_check_order(node *_node_)
     return order;
 }
 
-void Menu::draw_menu(void)
+void Menu::draw_node(node *_node, uint16_t color)
 {
-    node *_node = node_manager->now_node;
-    int num = node_manager->node_check_num();
+    int num = node_manager->node_check_num(_node);
     int now_ordor = node_manager->node_check_order(_node);
 
     for (int i = 0; i < num; i++)
     {
         int order = node_manager->node_check_order(_node);
-        _node->node_drawer.draw_cube(menu_center[0] + (order - now_ordor) * Tile_distence, menu_center[1], Tile_size, 2, BLACK, Overwrite);
+        drawer->draw_cube(menu_center[0] + (order - now_ordor) * Tile_distence, menu_center[1], Tile_size, 2, color);
         _node = _node->right_node;
         if (_node == nullptr)
             break;
     }
+}
+void Menu::draw_menu(void)
+{
+    node *_node_now = getNowNode();
+    node *_node_last = getLastNode();
+
+    draw_node(_node_last, WHITE);
+    draw_node(_node_now, BLACK);
 }
