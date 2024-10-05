@@ -52,6 +52,25 @@ void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
     }
 }
 
+void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color, drawer_enum mode)
+{
+    // static int _x1 = 0, _x2 = 0, _y1 = 0, _y2 = 0;
+    // int conditon = (_x1 != x1 &&_x2 != x2 && _y1 != y1 && _y2 != y2);
+    // if (mode == Overwrite)
+    // {
+    //     draw_line(_x1, _y1, _x2, _y2, background_color);
+    //     draw_line(x1, y1, x2, y2, color);
+    // }
+    // else
+    // {
+    draw_line(x1, y1, x2, y2, color);
+    // }
+    // _x1 = x1;
+    // _x2 = x2;
+    // _y1 = y1;
+    // _y2 = y2;
+}
+
 void Drawer::draw_cube(int x, int y, int length, int border_width, uint16_t color)
 {
     int x0 = x - length / 2;
@@ -68,6 +87,25 @@ void Drawer::draw_cube(int x, int y, int length, int border_width, uint16_t colo
     }
 }
 
+void Drawer::draw_cube(int x, int y, int length, int border_width, uint16_t color, drawer_enum mode)
+{
+    bool condition = (last_cube_x != x || last_cube_y != y || last_cube_length != length || last_cube_width != border_width);
+
+    if (mode == Overwrite && condition == true)
+    {
+        draw_cube(last_cube_x, last_cube_y, last_cube_length, last_cube_width, BLUE);
+    }
+    else if (condition == false)
+    {
+        return;
+    }
+    draw_cube(x, y, length, border_width, color);
+
+    last_cube_x = x;
+    last_cube_y = y;
+    last_cube_length = length;
+    last_cube_width = border_width;
+}
 void Drawer::draw_circle(int xc, int yc, int r, int width, uint16_t color)
 {
     int outer_radius = r;

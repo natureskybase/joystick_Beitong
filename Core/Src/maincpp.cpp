@@ -43,6 +43,7 @@ node cs1_2 = node(6);
 node cs2_1 = node(7);
 
 Drawer lcd_drawer = Drawer();
+Menu lcd_menu = Menu(&nodemanager);
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -157,7 +158,6 @@ void gui_update()
 	// sprintf(battery_inf, "bat is %3d%%", (int)remap(1800, 1960, 0, 100, (float)adc_vals[4]));
 	snprintf(battery_inf, sizeof(battery_inf), "bat is %3d%%", (int)remap(180, 196, 0, 100, (float)(adc_vals[4] / 10)));
 	LCD_ShowString(50, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
-	lcd_drawer.draw_cube(70, 50, 20, 2,BLACK);
 }
 int maincpp(void)
 {
@@ -181,6 +181,8 @@ int maincpp(void)
 	while (1)
 	{
 		gui_update();
+		lcd_menu.draw_menu();
+		//lcd_drawer.draw_cube(80, 40, 30, 3, BLACK, Overwrite);
 	}
 
 	return 0;
@@ -196,7 +198,7 @@ extern "C"
 	{
 		LL_TIM_ClearFlag_UPDATE(TIM2);
 
-		// !10ms的中断用于判断按键
+		// !5ms的中断用于判断按键
 		HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 5);
 		sticktest.dead_response = 500;
 		sticktest.dir_x = adc_vals[0];
