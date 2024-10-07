@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 01:01:06
+ * @LastEditTime: 2024-10-08 01:40:08
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
@@ -26,6 +26,7 @@ void node::AddNode(node *parent)
             sibling = sibling->next;
         }
         sibling->next = this;
+        this->last = sibling;
     }
 }
 node *node::FindNode(node *rootnode, int id)
@@ -51,11 +52,25 @@ node *node::FindNode(node *rootnode, int id)
 
 void Menu::Add_Elem(int id)
 {
-    node* newElem = new node(id);
+    node *newElem = new node(id);
 
     if (elemNum == 0)
     {
-        node* rootElem = new node(255);
+        node *rootElem = new node(255);
+        menuRoot = rootElem;
+        now_MenuElem = rootElem;
+    }
+    newElem->AddNode(menuRoot);
+    elemNum++;
+}
+
+void Menu::Add_Elem(int parentId,int id)
+{
+    node *newElem = new node(id);
+
+    if (elemNum == 0)
+    {
+        node *rootElem = new node(255);
         rootElem->AddNode(nullptr);
         menuRoot = rootElem;
     }
@@ -63,8 +78,58 @@ void Menu::Add_Elem(int id)
     elemNum++;
 }
 
-node *Menu::Find_Elem(int id)
+void Menu::ElemToNext()
+{
+    if (now_MenuElem->next != nullptr)
+    {
+        now_MenuElem = now_MenuElem->next;
+    }
+    else
+    {
+        now_MenuElem = menuRoot->children;
+    }
+}
+
+void Menu::ElemToLast()
+{
+    if (now_MenuElem->last != nullptr)
+    {
+        now_MenuElem = now_MenuElem->last;
+    }
+    else
+    {
+        node *temp = menuRoot->children;
+        while (temp->next != nullptr)
+        {
+            temp = temp->next;
+        }
+        now_MenuElem = temp;
+    }
+}
+void Menu::ElemToParent()
+{
+    if (now_MenuElem->parent != nullptr)
+    {
+        now_MenuElem = now_MenuElem->parent;
+    }
+}
+void Menu::ElemToChild()
+{
+    if (now_MenuElem->children != nullptr)
+    {
+        now_MenuElem = now_MenuElem->children;
+    }
+}
+
+    node *Menu::FindElem(int id)
 {
     node *_elem = menuRoot->FindNode(menuRoot, id);
+    return (_elem);
+}
+
+node *Menu::LocateElem(int id)
+{
+    node *_elem = menuRoot->FindNode(menuRoot, id);
+    now_MenuElem = _elem;
     return (_elem);
 }

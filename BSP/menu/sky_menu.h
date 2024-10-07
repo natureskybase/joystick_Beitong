@@ -20,6 +20,7 @@ public:
     node *parent = nullptr;
     node *children = nullptr;
     node *next = nullptr;
+    node *last = nullptr;
 
     node(int id) : id(id) {};
     void AddNode(node *parent);
@@ -36,7 +37,13 @@ public:
     int elemNum = 0;
 
     void Add_Elem(int id);
-    node *Find_Elem(int id);
+    void Add_Elem(int parentId, int id);
+    void ElemToNext();
+    void ElemToLast();
+    void ElemToParent();
+    void ElemToChild();
+    node *FindElem(int id);
+    node *LocateElem(int id);
 
     int menu_type = 0;
 

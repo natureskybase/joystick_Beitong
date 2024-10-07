@@ -9,6 +9,19 @@
         "xlocnum": "cpp",
         "xloctime": "cpp",
         "__locale": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "functional": "cpp",
+        "optional": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xtr1common": "cpp",
+        "__bit_reference": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "__memory": "cpp",
+        "limits": "cpp",
+        "ratio": "cpp",
+        "tuple": "cpp",
+        "vector": "cpp"
     }
 }

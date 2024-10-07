@@ -33,8 +33,8 @@ joystick Stick_L = joystick();
 joystick Stick_R = joystick();
 joystick sticktest = joystick();
 
-
 Drawer lcd_drawer = Drawer();
+Menu menu = Menu(&lcd_drawer);
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -68,16 +68,20 @@ void button_dowm(int i)
 {
 	if (button_LEFT.button_state == 1)
 	{
+		menu.ElemToLast();
 	}
 
 	if (button_RIGHT.button_state == 1)
 	{
+		menu.ElemToNext();
 	}
 	if (button_UP.button_state == 1)
 	{
+		menu.ElemToParent();
 	}
 	if (button_DOWN.button_state == 1)
 	{
+		menu.ElemToChild();
 	}
 }
 void stickin(uint16_t x, uint16_t y)
@@ -143,7 +147,7 @@ void node_change(int i)
 }
 void gui_update()
 {
-	// LCD_ShowIntNum(68, 30, nodemanager.now_node->id, 2, RED, WHITE, 16);
+	LCD_ShowIntNum(68, 30, menu.now_MenuElem->id, 2, RED, WHITE, 16);
 	char battery_inf[10] = {0};
 	snprintf(battery_inf, sizeof(battery_inf), "%3d%%", (int)(remap(180, 196, 0, 10, (float)(adc_vals[4] / 10))) * 10);
 	LCD_ShowString(128, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
@@ -157,11 +161,16 @@ int maincpp(void)
 	button_DOWN.buttonCallRegist(button_dowm, BTDown);
 	button_RIGHT.buttonCallRegist(button_dowm, BTDown);
 
+	menu.Add_Elem(1);
+	menu.Add_Elem(2);
+	menu.Add_Elem(3);
+	//menu.Add_Elem(4);
+	//menu.Add_Elem(5);
+	//menu.Add_Elem(6);
 
 	while (1)
 	{
 		gui_update();
-
 	}
 
 	return 0;
