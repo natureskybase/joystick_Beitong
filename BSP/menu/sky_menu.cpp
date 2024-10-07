@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 01:40:08
+ * @LastEditTime: 2024-10-08 01:53:23
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
@@ -64,7 +64,7 @@ void Menu::Add_Elem(int id)
     elemNum++;
 }
 
-void Menu::Add_Elem(int parentId,int id)
+void Menu::Add_Elem(int parentId, int id)
 {
     node *newElem = new node(id);
 
@@ -74,8 +74,12 @@ void Menu::Add_Elem(int parentId,int id)
         rootElem->AddNode(nullptr);
         menuRoot = rootElem;
     }
-    newElem->AddNode(menuRoot);
-    elemNum++;
+    else
+    {
+        node *parentElem = FindElem(parentId);
+        newElem->AddNode(parentElem);
+        elemNum++;
+    }
 }
 
 void Menu::ElemToNext()
@@ -86,7 +90,10 @@ void Menu::ElemToNext()
     }
     else
     {
-        now_MenuElem = menuRoot->children;
+        if (now_MenuElem->parent != nullptr)
+        {
+            now_MenuElem = now_MenuElem->parent->children;
+        }
     }
 }
 
@@ -98,12 +105,15 @@ void Menu::ElemToLast()
     }
     else
     {
-        node *temp = menuRoot->children;
-        while (temp->next != nullptr)
+        if (now_MenuElem->parent != nullptr)
         {
-            temp = temp->next;
+            node *temp = now_MenuElem->parent->children;
+            while (temp->next != nullptr)
+            {
+                temp = temp->next;
+            }
+            now_MenuElem = temp;
         }
-        now_MenuElem = temp;
     }
 }
 void Menu::ElemToParent()
@@ -121,7 +131,7 @@ void Menu::ElemToChild()
     }
 }
 
-    node *Menu::FindElem(int id)
+node *Menu::FindElem(int id)
 {
     node *_elem = menuRoot->FindNode(menuRoot, id);
     return (_elem);

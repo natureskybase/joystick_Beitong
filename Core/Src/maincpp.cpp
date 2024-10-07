@@ -164,9 +164,10 @@ int maincpp(void)
 	menu.Add_Elem(1);
 	menu.Add_Elem(2);
 	menu.Add_Elem(3);
-	//menu.Add_Elem(4);
-	//menu.Add_Elem(5);
-	//menu.Add_Elem(6);
+	menu.Add_Elem(4);
+	menu.Add_Elem(5);
+	menu.Add_Elem(5, 6);
+	menu.Add_Elem(5, 7);
 
 	while (1)
 	{
