@@ -34,7 +34,7 @@ joystick Stick_R = joystick();
 joystick sticktest = joystick();
 
 Drawer lcd_drawer = Drawer();
-Menu menu = Menu(&lcd_drawer);
+Menu menu = Menu();
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -172,6 +172,7 @@ int maincpp(void)
 	while (1)
 	{
 		gui_update();
+
 	}
 
 	return 0;

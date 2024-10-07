@@ -1,31 +1,14 @@
+/*
+ * @Author: skybase
+ * @Date: 2024-10-07 22:58:30
+ * @LastEditors: skybase
+ * @LastEditTime: 2024-10-08 02:05:21
+ * @Description:  ᕕ(◠ڼ◠)ᕗ​ 
+ * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\drawer.cpp
+ */
 #include "drawer.h"
 
-void Drawer::lcd_update()
-{
-    // for (int i = 0; i < display_size_x; ++i)
-    // {
-    //     for (int j = 0; j < display_size_y; ++j)
-    //     {
-    //         if(LCD_GRAM[i][j])
-    //         {
-    //             pointdraw(i, j, LCD_GRAM[i][j]);
-    //             // LCD_GRAM_Last[i][j] = LCD_GRAM[i][j];
-    //         }
-    //         else
-    //         {
-    //             continue;
-    //         }
-    //     }
-    // }
-
-}
-void Drawer::lcd_draw(int x,int y, uint16_t color)
-{
-    // LCD_GRAM[x][y] = color;
-}
-
-
-void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
+void Drawer::DrawLine(int x1, int y1, int x2, int y2, uint16_t color)
 {
     uint16_t t;
     int xerr = 0, yerr = 0, delta_x, delta_y, distance;
@@ -60,8 +43,7 @@ void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
     {
         if (uRow >= 0 && uRow <= display_size_x && uCol >= 0 && uCol <= display_size_y) // 检查是否在屏幕范围内
         {
-            // this->pointdraw(uRow, uCol, color); // 在当前点位置画点
-            lcd_draw(uRow, uCol, color);
+            this->pointdraw(uRow, uCol, color); // 在当前点位置画点
         }
         xerr += delta_x;
         yerr += delta_y;
@@ -78,87 +60,38 @@ void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color)
     }
 }
 
-void Drawer::draw_line(int x1, int y1, int x2, int y2, uint16_t color, drawer_enum mode)
+void Drawer::DrawCube(int x, int y, int length, int border_width, uint16_t color)
 {
-    draw_line(x1, y1, x2, y2, color);
-}
-
-void Drawer::draw_cube(int x, int y, int length, int border_width, uint16_t color)
-{
-    int x0 = x - length / 2;
-    int y0 = y - length / 2;
-    int x1 = x + length / 2;
-    int y1 = y + length / 2;
-
-    for (int i = 0; i < border_width; i++)
+    auto draw_cube_lambda = [&](int x, int y, int length, int border_width, uint16_t color)
     {
-        draw_line(x0 + i, y0 + i, x1 - i, y0 + i, color);
-        draw_line(x0 + i, y0 + i, x0 + i, y1 - i, color);
-        draw_line(x1 - i, y0 + i, x1 - i, y1 - i, color);
-        draw_line(x0 + i, y1 - i, x1 - i, y1 - i, color);
-    }
-}
+        int x0 = x - length / 2;
+        int y0 = y - length / 2;
+        int x1 = x + length / 2;
+        int y1 = y + length / 2;
 
-void Drawer::draw_cube(int x, int y, int length, int border_width, uint16_t color, drawer_enum mode)
-{
+        for (int i = 0; i < border_width; i++)
+        {
+            DrawLine(x0 + i, y0 + i, x1 - i, y0 + i, color);
+            DrawLine(x0 + i, y0 + i, x0 + i, y1 - i, color);
+            DrawLine(x1 - i, y0 + i, x1 - i, y1 - i, color);
+            DrawLine(x0 + i, y1 - i, x1 - i, y1 - i, color);
+        }
+    };
+
     bool condition = (last_cube_x != x || last_cube_y != y || last_cube_length != length || last_cube_width != border_width);
 
-    if (mode == Overwrite && condition == true)
+    if (condition == true)
     {
-        draw_cube(last_cube_x, last_cube_y, last_cube_length, last_cube_width, BLUE);
+        draw_cube_lambda(last_cube_x, last_cube_y, last_cube_length, last_cube_width, background_color);
     }
     else if (condition == false)
     {
         return;
     }
-    draw_cube(x, y, length, border_width, color);
+    draw_cube_lambda(x, y, length, border_width, color);
 
     last_cube_x = x;
     last_cube_y = y;
     last_cube_length = length;
     last_cube_width = border_width;
-}
-void Drawer::draw_circle(int xc, int yc, int r, int width, uint16_t color)
-{
-    int outer_radius = r;
-    int inner_radius = r - width;
-
-    for (int radius = outer_radius; radius > inner_radius; --radius)
-    {
-        int x = radius;
-        int y = 0;
-        int err = 1 - radius;
-
-        while (x >= y)
-        {
-            auto plot_point = [&](int px, int py)
-            {
-                if (px >= 0 && px < display_size_x && py >= 0 && py < display_size_y)
-                {
-                    this->pointdraw(px, py, color);
-                }
-            };
-
-            plot_point(xc + x, yc + y);
-            plot_point(xc + y, yc + x);
-            plot_point(xc - y, yc + x);
-            plot_point(xc - x, yc + y);
-            plot_point(xc - x, yc - y);
-            plot_point(xc - y, yc - x);
-            plot_point(xc + y, yc - x);
-            plot_point(xc + x, yc - y);
-
-            y++;
-
-            if (err <= 0)
-            {
-                err += 2 * y + 1;
-            }
-            else
-            {
-                x--;
-                err += 2 * (y - x) + 1;
-            }
-        }
-    }
 }

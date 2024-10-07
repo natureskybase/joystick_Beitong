@@ -22,6 +22,9 @@
         "limits": "cpp",
         "ratio": "cpp",
         "tuple": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "xstring": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
     }
 }

@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:29
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 01:05:03
+ * @LastEditTime: 2024-10-08 01:56:37
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.h
  */
@@ -11,7 +11,6 @@
 
 #include "main.h"
 #include "drawer.h"
-
 
 class node
 {
@@ -22,7 +21,11 @@ public:
     node *next = nullptr;
     node *last = nullptr;
 
-    node(int id) : id(id) {};
+    Drawer *ElemdDrawer;
+    node(int id) : id(id)
+    {
+        ElemdDrawer = new Drawer();
+    }
     void AddNode(node *parent);
     node *FindNode(node *rootnode, int id);
 };
@@ -30,8 +33,6 @@ public:
 class Menu
 {
 public:
-    Drawer *drawer = nullptr;
-
     node *now_MenuElem = nullptr;
     node *menuRoot = nullptr;
     int elemNum = 0;
@@ -54,8 +55,6 @@ public:
     int menu_center[2] = {80, 40};
 
     Menu() {};
-    Menu(Drawer *drawer) : drawer(drawer) {};
-
 };
 
 #endif
