@@ -35,10 +35,9 @@ public:
     AnimaStateType AnimationState = AnimaNone;
     float LinearSpeed = 0.15; //(像素/ms)
 
-    int x_start = 0;
-    int y_start = 40;
-    int x_end = 160;
-    int y_end = 40;
+
+    int x_target = 160;
+    int y_target = 40;
 
     int x_now;
     int y_now;
@@ -47,9 +46,8 @@ public:
     Animation(int fps, uint32_t timerPhase) : fps(fps), timerPhase(timerPhase) {};
     void SetFps(int _fps);
     void SetSpeed(float spd);
-    void SetAnimation(int sx, int sy, int ex, int ey);
-    void AnimationStart();
-    void CalculateNextFrame();
+    void SetAnimation(int ex, int ey);
+    void CalculateNextFrame(AnimaStateType type);
 };
 
 typedef enum

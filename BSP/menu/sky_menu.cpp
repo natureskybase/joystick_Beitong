@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 04:25:37
+ * @LastEditTime: 2024-10-08 04:34:46
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
@@ -17,25 +17,21 @@ void Animation::SetSpeed(float spd)
 {
     LinearSpeed = spd;
 }
-void Animation::SetAnimation(int sx, int sy, int ex, int ey)
+void Animation::SetAnimation(int ex, int ey)
 {
-    x_start = sx;
-    y_start = sy;
-    x_end = ex;
-    y_end = ey;
+    x_target = ex;
+    y_target = ey;
 }
-void Animation::AnimationStart()
+void Animation::CalculateNextFrame(AnimaStateType type)
 {
-    x_now = x_start;
-    y_now = y_start;
-}
-void Animation::CalculateNextFrame()
-{
-    if (countNow++ > exeCount)
+    if (type == Linear)
     {
-        x_now += (x_end - x_now) * LinearSpeed;
-        y_now += (y_end - y_now) * LinearSpeed;
-        countNow = 0;
+        if (countNow++ > exeCount)
+        {
+            x_now += (x_target - x_now) * LinearSpeed;
+            y_now += (y_target - y_now) * LinearSpeed;
+            countNow = 0;
+        }
     }
 }
 
@@ -83,21 +79,13 @@ node *node::FindNode(node *rootnode, int id)
 
 void node::DrawElem(Elem_type type)
 {
+    m_x = ElemAnimator->x_now;
+    m_y = ElemAnimator->y_now;
     if (type == Tile_Cube)
     {
-        ElemDrawer->DrawCube(m_x, m_y, m_length, m_width,BLACK);
+        ElemDrawer->DrawCube(m_x, m_y, m_length, m_width, BLACK);
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 void Menu::Add_Elem(int id)
 {
@@ -192,4 +180,3 @@ node *Menu::LocateElem(int id)
     now_MenuElem = _elem;
     return (_elem);
 }
-

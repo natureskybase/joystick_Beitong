@@ -36,6 +36,16 @@
         "xutility": "cpp",
         "map": "cpp",
         "unordered_map": "cpp",
-        "charconv": "cpp"
+        "charconv": "cpp",
+        "array": "cpp",
+        "compare": "cpp",
+        "format": "cpp",
+        "memory": "cpp",
+        "utility": "cpp",
+        "variant": "cpp",
+        "xmemory": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "forward_list": "cpp"
     }
 }

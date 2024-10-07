@@ -178,14 +178,12 @@ int maincpp(void)
 		if (TIM1_FLAG == 1)
 		{
 			TIM1_FLAG = 0;
+			
+			// TODO
+			// 这俩玩意到时候得一起再定时器里面执行
 			menu.now_MenuElem->ElemAnimator->CalculateNextFrame();
-			menu.now_MenuElem->m_x = menu.now_MenuElem->ElemAnimator->x_now;
-			menu.now_MenuElem->m_y = menu.now_MenuElem->ElemAnimator->y_now;
 			menu.now_MenuElem->DrawElem(Tile_Cube);
 
-			// menu.now_MenuElem->m_x = 80;
-			// menu.now_MenuElem->m_y = 40;
-			// menu.now_MenuElem->DrawElem(Tile_Cube);
 		}
 	}
 
