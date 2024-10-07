@@ -2,122 +2,69 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-05 23:45:09
+ * @LastEditTime: 2024-10-08 01:01:06
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
 #include "sky_menu.h"
 
-void NodeManager::add_node(node *now_node, node *father, node *child, node *left_node, node *right_node)
+void node::AddNode(node *parent)
 {
-    now_node->child = child;
-    now_node->father = father;
-    now_node->left_node = left_node;
-    now_node->right_node = right_node;
-    this->node_num++;
-}
+    this->parent = parent;
 
-int NodeManager ::node_check_num()
-{
-    node *_node = now_node;
-    int id = _node->id;
-    int num = 1;
-
-    int _safe_count = 100;
-    while (_safe_count--)
+    if (parent->children == nullptr)
     {
-        _node = _node->left_node;
-        if (_node->id != id)
-        {
-            num++;
-        }
-        else
-        {
-            break;
-        }
+        // 如果父节点没有子节点，则直接将新节点作为第一个子节点
+        parent->children = this;
     }
-    return num;
-}
-
-int NodeManager ::node_check_num(node *_node_)
-{
-    node *_node = _node_;
-    int id = _node->id;
-    int num = 1;
-
-    int _safe_count = 100;
-    while (_safe_count--)
+    else
     {
-        _node = _node->left_node;
-        if (_node->id != id)
+        // 如果已有子节点，遍历到最后一个子节点，插入新节点
+        node *sibling = parent->children;
+        while (sibling->next != nullptr)
         {
-            num++;
+            sibling = sibling->next;
         }
-        else
-        {
-            break;
-        }
-    }
-    return num;
-}
-
-/// @brief 单纯根据兄弟节点之间的id大小进行排序
-/// @brief 顺序由0开始计算
-/// @return
-int NodeManager::node_check_order()
-{
-    int order = 0;
-    node *_node = now_node;
-    int num = node_check_num();
-    for (int i = 0; i < num; i++)
-    {
-        if (_node->left_node->id <= _node->id) // 反转遍历顺序
-        {
-            break;
-        }
-        _node = _node->left_node;
-        order++;
-    }
-    return order;
-}
-
-int NodeManager::node_check_order(node *_node_)
-{
-    int order = 0;
-    node *_node = _node_;
-    int num = node_check_num();
-    int order_count = 0;
-    for (int i = 0; i < num; i++)
-    {
-        if (_node->left_node->id > _node->id)
-        {
-            break;
-        }
-        order++;
-        _node = _node->left_node;
-    }
-    return order;
-}
-
-void Menu::draw_node(node *_node, uint16_t color)
-{
-    int num = node_manager->node_check_num(_node);
-    int now_ordor = node_manager->node_check_order(_node);
-
-    for (int i = 0; i < num; i++)
-    {
-        int order = node_manager->node_check_order(_node);
-        drawer->draw_cube(menu_center[0] + (order - now_ordor) * Tile_distence, menu_center[1], Tile_size, 2, color);
-        _node = _node->right_node;
-        if (_node == nullptr)
-            break;
+        sibling->next = this;
     }
 }
-void Menu::draw_menu(void)
+node *node::FindNode(node *rootnode, int id)
 {
-    node *_node_now = getNowNode();
-    node *_node_last = getLastNode();
+    if (rootnode == nullptr)
+    {
+        return nullptr; // 如果当前节点为空，返回空指针
+    }
+    if (rootnode->id == id)
+    {
+        return rootnode; // 如果找到目标节点，返回该节点
+    }
+    // 递归在子节点中查找
+    node *result = FindNode(rootnode->children, id);
+    if (result != nullptr)
+    {
+        return result; // 如果在子节点中找到，返回结果
+    }
 
-    draw_node(_node_last, WHITE);
-    draw_node(_node_now, BLACK);
+    // 如果当前节点的子节点中没找到，在兄弟节点中继续查找
+    return FindNode(rootnode->next, id);
+}
+
+void Menu::Add_Elem(int id)
+{
+    node* newElem = new node(id);
+
+    if (elemNum == 0)
+    {
+        node* rootElem = new node(255);
+        rootElem->AddNode(nullptr);
+        menuRoot = rootElem;
+    }
+    newElem->AddNode(menuRoot);
+    elemNum++;
+}
+
+node *Menu::Find_Elem(int id)
+{
+    node *_elem = menuRoot->FindNode(menuRoot, id);
+    return (_elem);
 }

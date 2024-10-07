@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "__node_handle": "cpp",
+        "locale": "cpp",
+        "thread": "cpp",
+        "xlocale": "cpp",
+        "xlocmes": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "__locale": "cpp",
+        "chrono": "cpp"
+    }
+}

@@ -33,17 +33,8 @@ joystick Stick_L = joystick();
 joystick Stick_R = joystick();
 joystick sticktest = joystick();
 
-NodeManager nodemanager = NodeManager();
-node cs1 = node(1);
-node cs2 = node(2);
-node cs3 = node(3);
-node cs4 = node(4);
-node cs1_1 = node(5);
-node cs1_2 = node(6);
-node cs2_1 = node(7);
 
 Drawer lcd_drawer = Drawer();
-Menu lcd_menu = Menu(&nodemanager, &lcd_drawer);
 
 float remap(float x, float y, float x1, float y1, float value)
 {
@@ -77,21 +68,16 @@ void button_dowm(int i)
 {
 	if (button_LEFT.button_state == 1)
 	{
-		nodemanager.node_to_left();
-		test_num1++;
 	}
 
 	if (button_RIGHT.button_state == 1)
 	{
-		nodemanager.node_to_right();
 	}
 	if (button_UP.button_state == 1)
 	{
-		nodemanager.node_to_father();
 	}
 	if (button_DOWN.button_state == 1)
 	{
-		nodemanager.node_to_child();
 	}
 }
 void stickin(uint16_t x, uint16_t y)
@@ -154,11 +140,10 @@ void button_update_test()
 void node_change(int i)
 {
 	LCD_Fill(0, 20, 160, 80, WHITE);
-	lcd_menu.draw_menu();
 }
 void gui_update()
 {
-	LCD_ShowIntNum(68, 30, nodemanager.now_node->id, 2, RED, WHITE, 16);
+	// LCD_ShowIntNum(68, 30, nodemanager.now_node->id, 2, RED, WHITE, 16);
 	char battery_inf[10] = {0};
 	snprintf(battery_inf, sizeof(battery_inf), "%3d%%", (int)(remap(180, 196, 0, 10, (float)(adc_vals[4] / 10))) * 10);
 	LCD_ShowString(128, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
@@ -172,28 +157,11 @@ int maincpp(void)
 	button_DOWN.buttonCallRegist(button_dowm, BTDown);
 	button_RIGHT.buttonCallRegist(button_dowm, BTDown);
 
-	nodemanager.add_node(&cs1, &cs1, &cs1_1, &cs4, &cs2);
-	nodemanager.add_node(&cs2, &cs2, &cs2_1, &cs1, &cs3);
-	nodemanager.add_node(&cs3, &cs3, &cs3, &cs2, &cs4);
-	nodemanager.add_node(&cs4, &cs4, &cs4, &cs3, &cs1);
-	nodemanager.add_node(&cs1_1, &cs1, &cs1_1, &cs1_2, &cs1_2);
-	nodemanager.add_node(&cs1_2, &cs1, &cs1_2, &cs1_1, &cs1_1);
-	nodemanager.add_node(&cs2_1, &cs2, &cs2_1, &cs2_1, &cs2_1);
 
-	nodemanager.now_node = &cs1;
-	nodemanager.last_node = &cs1;
-	nodemanager.node_change_trig = node_change;
-
-	lcd_menu.draw_menu();
 	while (1)
 	{
 		gui_update();
-		//		LCD_Fill(0, 0, 160, 80, RED);
-		//		LCD_Fill(0, 0, 160, 80, GREEN);
-		//		LCD_Fill(0, 0, 160, 80, BLUE);
-		// lcd_menu.draw_menu();
-		// lcd_drawer.lcd_update();
-		// lcd_drawer.draw_cube(80, 40, 30, 3, BLACK, Overwrite);
+
 	}
 
 	return 0;
