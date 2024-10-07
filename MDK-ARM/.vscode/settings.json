@@ -25,6 +25,17 @@
         "vector": "cpp",
         "xstring": "cpp",
         "string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "xiosbase": "cpp",
+        "ios": "cpp",
+        "algorithm": "cpp",
+        "execution": "cpp",
+        "iterator": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp",
+        "charconv": "cpp"
     }
 }

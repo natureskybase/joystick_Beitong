@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:29
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 01:56:37
+ * @LastEditTime: 2024-10-08 04:26:11
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.h
  */
@@ -11,6 +11,52 @@
 
 #include "main.h"
 #include "drawer.h"
+
+typedef enum
+{
+    Linear = 0,
+} Interpolation_Type;
+
+typedef enum
+{
+    AnimaNone = 0,
+    AnimaStart,
+    AnimaContinu,
+    AnimaEnd,
+} AnimaStateType;
+
+class Animation
+{
+public:
+    int fps = 60;
+    uint32_t timerPhase = 5; // 用于刷屏的定时器周期 (以毫秒为单位)
+    int exeCount = 3;
+    int countNow = 0;
+    AnimaStateType AnimationState = AnimaNone;
+    float LinearSpeed = 0.15; //(像素/ms)
+
+    int x_start = 0;
+    int y_start = 40;
+    int x_end = 160;
+    int y_end = 40;
+
+    int x_now;
+    int y_now;
+
+    Animation() {};
+    Animation(int fps, uint32_t timerPhase) : fps(fps), timerPhase(timerPhase) {};
+    void SetFps(int _fps);
+    void SetSpeed(float spd);
+    void SetAnimation(int sx, int sy, int ex, int ey);
+    void AnimationStart();
+    void CalculateNextFrame();
+};
+
+typedef enum
+{
+    Tile_Cube = 0,
+    Tile_Circle,
+} Elem_type;
 
 class node
 {
@@ -21,13 +67,24 @@ public:
     node *next = nullptr;
     node *last = nullptr;
 
-    Drawer *ElemdDrawer;
+    Drawer *ElemDrawer;
+    Elem_type elem_type = Tile_Cube;
+    int m_x = 0;
+    int m_y = 0;
+    int m_length = 30;
+    int m_width = 3;
+
+    Animation *ElemAnimator;
+
+    typedef void (*NodeCall)(void);
     node(int id) : id(id)
     {
-        ElemdDrawer = new Drawer();
+        ElemDrawer = new Drawer();
+        ElemAnimator = new Animation();
     }
     void AddNode(node *parent);
     node *FindNode(node *rootnode, int id);
+    void DrawElem(Elem_type type);
 };
 
 class Menu
@@ -45,8 +102,6 @@ public:
     void ElemToChild();
     node *FindElem(int id);
     node *LocateElem(int id);
-
-    int menu_type = 0;
 
     // if the menu_type is tiles
     int Tile_num;

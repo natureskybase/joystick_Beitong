@@ -48,6 +48,11 @@ stick_beitong/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
   ..\Core\Inc\adc.h ..\Core\Inc\dma.h ..\Core\Inc\spi.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\usart.h ..\Core\Inc\usb.h \
+  ..\Core\Inc\tim.h ..\Core\Inc\usart.h ..\USB_Device\App\usb_device.h \
+  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
+  ..\USB_Device\Target\usbd_conf.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdio.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdlib.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\string.h \
   ..\Core\Inc\gpio.h ..\Core\Src\maincpp.h ..\BSP\LCD\lcd.h \
   ..\BSP\LCD\lcd_init.h

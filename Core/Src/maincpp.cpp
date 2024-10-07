@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <cstdio>
 
+int TIM1_FLAG = 0;
+
 uint16_t adc_vals[5] = {0};
 static int bt_id = 0;
 button button_RT = button(RT_GPIO_Port, RT_Pin, bt_id++);
@@ -163,16 +165,28 @@ int maincpp(void)
 
 	menu.Add_Elem(1);
 	menu.Add_Elem(2);
-	menu.Add_Elem(3);
-	menu.Add_Elem(4);
-	menu.Add_Elem(5);
-	menu.Add_Elem(5, 6);
-	menu.Add_Elem(5, 7);
+	// menu.Add_Elem(3);
+	// menu.Add_Elem(4);
+	// menu.Add_Elem(5);
+	// menu.Add_Elem(5, 6);
+	// menu.Add_Elem(5, 7);
 
+	menu.now_MenuElem->ElemAnimator->AnimationStart();
 	while (1)
 	{
 		gui_update();
+		if (TIM1_FLAG == 1)
+		{
+			TIM1_FLAG = 0;
+			menu.now_MenuElem->ElemAnimator->CalculateNextFrame();
+			menu.now_MenuElem->m_x = menu.now_MenuElem->ElemAnimator->x_now;
+			menu.now_MenuElem->m_y = menu.now_MenuElem->ElemAnimator->y_now;
+			menu.now_MenuElem->DrawElem(Tile_Cube);
 
+			// menu.now_MenuElem->m_x = 80;
+			// menu.now_MenuElem->m_y = 40;
+			// menu.now_MenuElem->DrawElem(Tile_Cube);
+		}
 	}
 
 	return 0;
@@ -187,7 +201,7 @@ extern "C"
 	void tim2_callback(void)
 	{
 		LL_TIM_ClearFlag_UPDATE(TIM2);
-
+		TIM1_FLAG = 1;
 		// !5ms的中断用于判断按键
 		HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 5);
 		sticktest.dead_response = 500;

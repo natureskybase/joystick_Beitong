@@ -23,7 +23,7 @@
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
-#include "usb.h"
+#include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -96,13 +96,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_USB_PCD_Init();
   MX_ADC1_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
-  MX_TIM1_Init();
   MX_TIM2_Init();
   MX_SPI3_Init();
+  MX_USB_Device_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_ADCEx_Calibration_Start(&hadc1, 0); // AD校准
