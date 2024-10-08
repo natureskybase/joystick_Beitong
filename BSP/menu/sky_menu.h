@@ -17,13 +17,13 @@ typedef enum
     Linear = 0,
 } Interpolation_Type;
 
-typedef enum
-{
-    AnimaNone = 0,
-    AnimaStart,
-    AnimaContinu,
-    AnimaEnd,
-} AnimaStateType;
+// typedef enum
+// {
+//     AnimaNone = 0,
+//     AnimaStart,
+//     AnimaContinu,
+//     AnimaEnd,
+// } AnimaStateType;
 
 class Animation
 {
@@ -32,7 +32,7 @@ public:
     uint32_t timerPhase = 5; // 用于刷屏的定时器周期 (以毫秒为单位)
     int exeCount = 3;
     int countNow = 0;
-    AnimaStateType AnimationState = AnimaNone;
+
     float LinearSpeed = 0.15; //(像素/ms)
 
 
@@ -47,7 +47,7 @@ public:
     void SetFps(int _fps);
     void SetSpeed(float spd);
     void SetAnimation(int ex, int ey);
-    void CalculateNextFrame(AnimaStateType type);
+    void CalculateNextFrame(Interpolation_Type type);
 };
 
 typedef enum

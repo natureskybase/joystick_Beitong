@@ -22,7 +22,7 @@ void Animation::SetAnimation(int ex, int ey)
     x_target = ex;
     y_target = ey;
 }
-void Animation::CalculateNextFrame(AnimaStateType type)
+void Animation::CalculateNextFrame(Interpolation_Type type)
 {
     if (type == Linear)
     {

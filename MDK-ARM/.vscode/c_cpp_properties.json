@@ -12,19 +12,13 @@
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\BSP\\Interface",
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\BSP\\menu",
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\BSP",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\USB_Device\\App",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\USB_Device\\Target",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Middlewares\\ST\\STM32_USB_Device_Library\\Core\\Inc",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Middlewares\\ST\\STM32_USB_Device_Library\\Class\\HID\\Inc",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
                 "C:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\libcxx",
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\MDK-ARM",
                 "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Core\\Src",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Drivers\\STM32G4xx_HAL_Driver\\Src",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Middlewares\\ST\\STM32_USB_Device_Library\\Core\\Src",
-                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Middlewares\\ST\\STM32_USB_Device_Library\\Class\\HID\\Src"
+                "d:\\Project\\Embedded_project\\Stm_pro\\joystick_Beitong\\Drivers\\STM32G4xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_FULL_LL_DRIVER",

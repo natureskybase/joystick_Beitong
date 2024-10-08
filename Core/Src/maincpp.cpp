@@ -165,13 +165,12 @@ int maincpp(void)
 
 	menu.Add_Elem(1);
 	menu.Add_Elem(2);
-	// menu.Add_Elem(3);
-	// menu.Add_Elem(4);
-	// menu.Add_Elem(5);
-	// menu.Add_Elem(5, 6);
-	// menu.Add_Elem(5, 7);
+	menu.Add_Elem(3);
+	menu.Add_Elem(4);
+	menu.Add_Elem(5);
+	menu.Add_Elem(5, 6);
+	menu.Add_Elem(5, 7);
 
-	menu.now_MenuElem->ElemAnimator->AnimationStart();
 	while (1)
 	{
 		gui_update();
@@ -181,7 +180,7 @@ int maincpp(void)
 			
 			// TODO
 			// 这俩玩意到时候得一起再定时器里面执行
-			menu.now_MenuElem->ElemAnimator->CalculateNextFrame();
+			menu.now_MenuElem->ElemAnimator->CalculateNextFrame(Linear);
 			menu.now_MenuElem->DrawElem(Tile_Cube);
 
 		}
