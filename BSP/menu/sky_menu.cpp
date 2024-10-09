@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 04:34:46
+ * @LastEditTime: 2024-10-09 22:24:50
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
@@ -179,4 +179,68 @@ node *Menu::LocateElem(int id)
     node *_elem = menuRoot->FindNode(menuRoot, id);
     now_MenuElem = _elem;
     return (_elem);
+}
+
+int Menu::ElemNumCheck(node *elem)
+{
+    int num = 1;
+    if (elem->parent == nullptr)
+        return 0; // 说明这是根节点,不进行操作
+    node *firstElem = elem->parent->children;
+    while (firstElem->next != nullptr)
+    {
+        num++;
+        firstElem = firstElem->next;
+    }
+    return num;
+}
+
+int Menu::ELemOrderCheck(node *elem)
+{
+    int num = 0;
+    if (elem->parent == nullptr)
+        return 0; // 根节点不进行操作
+
+    node *nowElem = elem->parent->children;
+
+    while (nowElem != nullptr && nowElem != elem)
+    {
+        num++;
+        nowElem = nowElem->next;
+    }
+
+    if (nowElem == nullptr)
+    {
+        return -1; // 元素未在父节点的子节点列表中找到
+    }
+
+    return num;
+}
+
+void Menu::AnimaCla()
+{
+    node *_Elem = now_MenuElem->parent->children;
+    int num = ElemNumCheck(now_MenuElem);
+    int order = ELemOrderCheck(now_MenuElem);
+    for (int i = 0; i < num; i++)
+    {
+        _Elem->ElemAnimator->x_target = menu_center[0] + Tile_distence * (i - order);
+        _Elem->ElemAnimator->y_target = menu_center[1];
+        if (_Elem->next != nullptr)
+            _Elem = _Elem->next;
+    }
+}
+
+void Menu::AnimaUpdate()
+{
+    node *_Elem = now_MenuElem->parent->children;
+    int num = ElemNumCheck(now_MenuElem);
+
+    for (int i = 0; i < num; i++)
+    {
+        _Elem->ElemAnimator->CalculateNextFrame(Linear);
+        _Elem->DrawElem(Tile_Cube);
+        if (_Elem->next != nullptr)
+            _Elem = _Elem->next;
+    }
 }

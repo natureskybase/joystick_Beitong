@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:29
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-08 04:26:11
+ * @LastEditTime: 2024-10-09 17:37:53
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.h
  */
@@ -34,7 +34,6 @@ public:
     int countNow = 0;
 
     float LinearSpeed = 0.15; //(像素/ms)
-
 
     int x_target = 160;
     int y_target = 40;
@@ -75,6 +74,7 @@ public:
     Animation *ElemAnimator;
 
     typedef void (*NodeCall)(void);
+    NodeCall eventCallBack = nullptr;
     node(int id) : id(id)
     {
         ElemDrawer = new Drawer();
@@ -83,6 +83,15 @@ public:
     void AddNode(node *parent);
     node *FindNode(node *rootnode, int id);
     void DrawElem(Elem_type type);
+};
+
+class Camera
+{
+    int x = 80;
+    int y = 40;
+
+    Camera() {};
+    Camera(int x, int y) : x(x), y(y) {};
 };
 
 class Menu
@@ -100,6 +109,11 @@ public:
     void ElemToChild();
     node *FindElem(int id);
     node *LocateElem(int id);
+
+    int ElemNumCheck(node *elem);
+    int ELemOrderCheck(node *elem);
+    void AnimaCla();
+    void AnimaUpdate();
 
     // if the menu_type is tiles
     int Tile_num;

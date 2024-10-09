@@ -149,7 +149,7 @@ void node_change(int i)
 }
 void gui_update()
 {
-	LCD_ShowIntNum(68, 30, menu.now_MenuElem->id, 2, RED, WHITE, 16);
+	LCD_ShowIntNum(72, 60, menu.now_MenuElem->id, 1, RED, WHITE, 16);
 	char battery_inf[10] = {0};
 	snprintf(battery_inf, sizeof(battery_inf), "%3d%%", (int)(remap(180, 196, 0, 10, (float)(adc_vals[4] / 10))) * 10);
 	LCD_ShowString(128, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
@@ -177,12 +177,14 @@ int maincpp(void)
 		if (TIM1_FLAG == 1)
 		{
 			TIM1_FLAG = 0;
-			
+
+			menu.AnimaCla();
+
 			// TODO
 			// 这俩玩意到时候得一起再定时器里面执行
-			menu.now_MenuElem->ElemAnimator->CalculateNextFrame(Linear);
-			menu.now_MenuElem->DrawElem(Tile_Cube);
-
+			// menu.now_MenuElem->ElemAnimator->CalculateNextFrame(Linear);
+			// menu.now_MenuElem->DrawElem(Tile_Cube);
+			menu.AnimaUpdate();
 		}
 	}
 
