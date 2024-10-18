@@ -2,18 +2,21 @@
  * @Author: skybase
  * @Date: 2024-08-14 00:52:25
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-02 17:23:48
+ * @LastEditTime: 2024-10-18 18:48:58
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\joystick.h
  */
 #ifndef JOYSTICK_H_
 #define JOYSTICK_H_
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 #include "main.h"
 #include "adc.h"
-#include "stm32g4xx_hal.h"
-#include "sky_button.h"
-#include "lcd.h"
+#include "usart.h"
 
 typedef enum
 {
@@ -37,30 +40,33 @@ typedef enum
 
 typedef enum
 {
-    Beitong = 1,
-    Thrbo = 2,
-    Clear = 4
-} GamepadButtonFlags_expand;
+    LB = 1,
+    RB = 2,
+    Beitong = 4,
+    Thrbo = 8,
+    Clear = 0x10,
+}GamepadButtonFlags_expand;
 
 #pragma pack(1)
 typedef struct
 {
-    uint8_t LB;
-    uint8_t RB;
-    uint32_t VL;
-    uint32_t HL;
-    uint32_t VR;
-    uint32_t HR;
+    uint16_t VL;
+    uint16_t HL;
+    uint16_t VR;
+    uint16_t HR;
 
 } spindle;
 #pragma pack()
 
-void button_get(void);
 
 extern uint32_t button_state;
 extern uint32_t button_state_extence;
 extern spindle joystick_spin;
+extern uint16_t adc_vals[5];
+void JoystickDataTransmit();
 
-
+#ifdef __cplusplus
+}
+#endif
 
 #endif

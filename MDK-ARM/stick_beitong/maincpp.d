@@ -34,21 +34,23 @@ stick_beitong/maincpp.o: ..\Core\Src\maincpp.cpp ..\Core\Src\maincpp.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usart.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
   ..\Core\Inc\adc.h ..\BSP\Interface\sky_button.h ..\BSP\menu\sky_menu.h \
-  ..\BSP\menu\drawer.h ..\BSP\LCD\lcd.h \
+  ..\BSP\menu\drawer.h ..\BSP\LCD\lcd.h ..\BSP\Interface\joystick.h \
+  ..\Core\Inc\usart.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdio.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\cstdio \

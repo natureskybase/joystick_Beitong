@@ -21,7 +21,8 @@ extern "C"
 {
 #endif
 int maincpp(void);
-	
+// extern uint16_t adc_vals[5];
+
 #ifdef __cplusplus
 }
 #endif

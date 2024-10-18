@@ -57,7 +57,7 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+extern UART_HandleTypeDef huart1;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -66,9 +66,9 @@ void SystemClock_Config(void);
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
-  * @retval int
-  */
+ * @brief  The application entry point.
+ * @retval int
+ */
 int main(void)
 {
 
@@ -106,23 +106,25 @@ int main(void)
 
   LL_TIM_EnableCounter(TIM2);
   LL_TIM_EnableIT_UPDATE(TIM2);
-
+	
   // LL_SPI_Enable(SPI3);
 
   LCD_Init();
-  HAL_Delay(500);
+  HAL_Delay(1);
   LCD_Fill(0, 0, 160, 80, WHITE);
   
   HAL_ADC_Start(&hadc1); // 启动ADC转换
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    // HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 4);
-    maincpp();
+		uint8_t data[5]={1,2,3,4,5};
+    // HAL_UART_Transmit_DMA(&huart1,data,5);
+		HAL_UART_Transmit(&huart1,(uint8_t*)&data,5,1000);
+		HAL_Delay(10);
+    // maincpp();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

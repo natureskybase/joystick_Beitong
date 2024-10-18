@@ -3,6 +3,7 @@
 #include "sky_menu.h"
 #include "drawer.h"
 #include "lcd.h"
+#include "joystick.h"
 
 #include <stdio.h>
 #include <cstdio>
@@ -203,16 +204,17 @@ extern "C"
 		TIM1_FLAG = 1;
 		// !5ms的中断用于判断按键
 		HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 5);
+
 		sticktest.dead_response = 500;
 		sticktest.dir_x = adc_vals[0];
 		sticktest.dir_y = adc_vals[1];
 
+		// JoystickDataTransmit();
+
 		button_update_test();
 		button_state_update();
 
-		uint32_t _gpio_state_a = LL_GPIO_ReadInputPort(GPIOA);
-		uint32_t _gpio_state_b = LL_GPIO_ReadInputPort(GPIOB);
-		uint32_t _gpio_state_c = LL_GPIO_ReadInputPort(GPIOC);
+
 	}
 
 #ifdef __cplusplus
