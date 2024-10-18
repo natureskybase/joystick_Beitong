@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:29
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-09 17:37:53
+ * @LastEditTime: 2024-10-19 03:15:54
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.h
  */
@@ -28,15 +28,15 @@ typedef enum
 class Animation
 {
 public:
-    int fps = 60;
+    int fps = 120;
     uint32_t timerPhase = 5; // 用于刷屏的定时器周期 (以毫秒为单位)
-    int exeCount = 3;
+    int exeCount = 1;
     int countNow = 0;
 
-    float LinearSpeed = 0.15; //(像素/ms)
+    float LinearSpeed = 0.2; //(像素/ms)
 
-    int x_target = 160;
-    int y_target = 40;
+    int x_target;
+    int y_target;
 
     int x_now;
     int y_now;
@@ -57,12 +57,13 @@ typedef enum
 
 class node
 {
-public:
+public:    
     int id;
     node *parent = nullptr;
     node *children = nullptr;
     node *next = nullptr;
     node *last = nullptr;
+    char *text = nullptr;
 
     Drawer *ElemDrawer;
     Elem_type elem_type = Tile_Cube;
@@ -75,7 +76,14 @@ public:
 
     typedef void (*NodeCall)(void);
     NodeCall eventCallBack = nullptr;
+
     node(int id) : id(id)
+    {
+        ElemDrawer = new Drawer();
+        ElemAnimator = new Animation();
+    }
+
+    node(int id, char *text) : id(id), text(text)
     {
         ElemDrawer = new Drawer();
         ElemAnimator = new Animation();
@@ -94,19 +102,30 @@ class Camera
     Camera(int x, int y) : x(x), y(y) {};
 };
 
+typedef enum
+{
+    Select = 0,
+    InFuntion,
+} MenuState_Type;
+
 class Menu
 {
 public:
     node *now_MenuElem = nullptr;
     node *menuRoot = nullptr;
     int elemNum = 0;
+    MenuState_Type menuState = Select;
 
     void Add_Elem(int id);
+    void Add_Elem(int id, node::NodeCall callback, char *text);
     void Add_Elem(int parentId, int id);
+
     void ElemToNext();
     void ElemToLast();
     void ElemToParent();
     void ElemToChild();
+    void ElemInFunction();
+    void ElemOutFunction();
     node *FindElem(int id);
     node *LocateElem(int id);
 
@@ -114,6 +133,9 @@ public:
     int ELemOrderCheck(node *elem);
     void AnimaCla();
     void AnimaUpdate();
+
+    void CallUpdate();
+
 
     // if the menu_type is tiles
     int Tile_num;

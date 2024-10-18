@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-08-14 00:52:25
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-18 22:04:49
+ * @LastEditTime: 2024-10-19 03:28:54
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\joystick.h
  */
@@ -69,6 +69,7 @@ struct dataToTransmit
 
 
 extern uint16_t adc_vals[5];
+void JoystickDataUpdate();
 void JoystickDataTransmit();
 
 #ifdef __cplusplus

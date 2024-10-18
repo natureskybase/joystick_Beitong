@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-10-02 15:53:09
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-09 22:24:50
+ * @LastEditTime: 2024-10-19 03:20:34
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\menu\sky_menu.cpp
  */
@@ -101,6 +101,20 @@ void Menu::Add_Elem(int id)
     elemNum++;
 }
 
+void Menu::Add_Elem(int id, node::NodeCall callback, char *text)
+{
+    node *newElem = new node(id, text);
+    newElem->eventCallBack = callback;
+
+    if (elemNum == 0)
+    {
+        node *rootElem = new node(255);
+        menuRoot = rootElem;
+        now_MenuElem = rootElem;
+    }
+    newElem->AddNode(menuRoot);
+    elemNum++;
+}
 void Menu::Add_Elem(int parentId, int id)
 {
     node *newElem = new node(id);
@@ -155,7 +169,7 @@ void Menu::ElemToLast()
 }
 void Menu::ElemToParent()
 {
-    if (now_MenuElem->parent != nullptr)
+    if (now_MenuElem->parent != nullptr  && now_MenuElem->parent!=menuRoot)
     {
         now_MenuElem = now_MenuElem->parent;
     }
@@ -167,7 +181,15 @@ void Menu::ElemToChild()
         now_MenuElem = now_MenuElem->children;
     }
 }
+void Menu::ElemInFunction()
+{
+    menuState = InFuntion;
+}
 
+void Menu::ElemOutFunction()
+{
+    menuState = Select;
+}
 node *Menu::FindElem(int id)
 {
     node *_elem = menuRoot->FindNode(menuRoot, id);
@@ -222,17 +244,34 @@ void Menu::AnimaCla()
     node *_Elem = now_MenuElem->parent->children;
     int num = ElemNumCheck(now_MenuElem);
     int order = ELemOrderCheck(now_MenuElem);
-    for (int i = 0; i < num; i++)
+
+    if (menuState == Select)
     {
-        _Elem->ElemAnimator->x_target = menu_center[0] + Tile_distence * (i - order);
-        _Elem->ElemAnimator->y_target = menu_center[1];
-        if (_Elem->next != nullptr)
-            _Elem = _Elem->next;
+        for (int i = 0; i < num; i++)
+        {
+            _Elem->ElemAnimator->x_target = menu_center[0] + Tile_distence * (i - order);
+            _Elem->ElemAnimator->y_target = menu_center[1];
+            if (_Elem->next != nullptr)
+                _Elem = _Elem->next;
+        }
+    }
+    else if (menuState == InFuntion)
+    {
+        for (int i = 0; i < num; i++)
+        {
+            _Elem->ElemAnimator->x_target = 160;
+            _Elem->ElemAnimator->y_target = -30;
+            if (_Elem->next != nullptr)
+                _Elem = _Elem->next;
+        }
+        now_MenuElem->ElemAnimator->x_target = 30;
+        now_MenuElem->ElemAnimator->y_target = menu_center[1];
     }
 }
 
 void Menu::AnimaUpdate()
 {
+    AnimaCla();
     node *_Elem = now_MenuElem->parent->children;
     int num = ElemNumCheck(now_MenuElem);
 
@@ -242,5 +281,20 @@ void Menu::AnimaUpdate()
         _Elem->DrawElem(Tile_Cube);
         if (_Elem->next != nullptr)
             _Elem = _Elem->next;
+    }
+}
+
+void Menu::CallUpdate()
+{
+    if (now_MenuElem->eventCallBack != nullptr)
+    {
+        if (menuState == InFuntion)
+        {
+            now_MenuElem->eventCallBack();
+        }
+        else
+        {
+            return;
+        }
     }
 }

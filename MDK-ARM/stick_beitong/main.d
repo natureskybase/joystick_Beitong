@@ -47,5 +47,6 @@ stick_beitong/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
   ..\Core\Inc\adc.h ..\Core\Inc\dma.h ..\Core\Inc\spi.h \
   ..\Core\Inc\tim.h ..\Core\Inc\usart.h ..\Core\Inc\gpio.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdio.h \
   ..\Core\Src\maincpp.h ..\BSP\LCD\lcd.h ..\BSP\LCD\lcd_init.h \
   ..\BSP\Interface\joystick.h

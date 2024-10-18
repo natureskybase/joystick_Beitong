@@ -54,7 +54,6 @@ void JoystickDataUpdate()
 struct dataToTransmit data;
 void JoystickDataTransmit()
 {
-    JoystickDataUpdate();
     data.bs = button_state;
     data.bse = button_state_extence;
     data.frame[0] = 0xfe;
@@ -62,11 +61,11 @@ void JoystickDataTransmit()
     data.sp = joystick_spin;
 
     data.ddr8 = 0;
-		uint8_t *dataTemp = (uint8_t*)&data;
+    uint8_t *dataTemp = (uint8_t *)&data;
     for (int i = 0; i < sizeof(struct dataToTransmit); i++)
     {
         data.ddr8 += *dataTemp;
-				dataTemp++;
+        dataTemp++;
     }
     HAL_UART_Transmit_DMA(&huart1, (uint8_t *)&data, sizeof(struct dataToTransmit));
 }

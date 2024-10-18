@@ -21,14 +21,13 @@ extern "C"
 #include "stm32g4xx_hal.h"
 
 
-int maincpp(void);
-int MainCppInit(void);
-int MainCppLoop(void);
+    int MainCppInit(void);
+    int MainCppLoop(void);
 
-void gui_update(void);
-void button_update_test(void);
-void button_state_update(void);
-// extern uint16_t adc_vals[5];
+
+    void InterfaceStateUpdate(void);
+
+
 
 #ifdef __cplusplus
 }
