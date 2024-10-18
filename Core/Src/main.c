@@ -31,6 +31,8 @@
 #include "lcd.h"
 #include "lcd_init.h"
 
+#include "joystick.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,7 +64,20 @@ extern UART_HandleTypeDef huart1;
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-// uint16_t adc_vals[4] = {0};
+int TIM1_FLAG = 0;
+
+void tim2_callback(void)
+{
+  LL_TIM_ClearFlag_UPDATE(TIM2);
+  TIM1_FLAG = 1;
+  // !5ms的中断用于判断按键
+  JoystickDataTransmit();
+
+  //gui_update();
+  button_update_test();
+  button_state_update();
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -102,29 +117,32 @@ int main(void)
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_ADCEx_Calibration_Start(&hadc1, 0); // AD校准
 
-  LL_TIM_EnableCounter(TIM2);
-  LL_TIM_EnableIT_UPDATE(TIM2);
-	
+
+
+
   // LL_SPI_Enable(SPI3);
 
   LCD_Init();
   HAL_Delay(1);
   LCD_Fill(0, 0, 160, 80, WHITE);
+	
+	HAL_ADCEx_Calibration_Start(&hadc1, 0); // AD校准
+	HAL_ADC_Start(&hadc1); // 启动ADC转换
+	
+	LL_TIM_EnableCounter(TIM2);
+  LL_TIM_EnableIT_UPDATE(TIM2);
   
-  HAL_ADC_Start(&hadc1); // 启动ADC转换
+
+  MainCppInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		uint8_t data[5]={1,2,3,4,5};
-    // HAL_UART_Transmit_DMA(&huart1,data,5);
-		HAL_UART_Transmit(&huart1,(uint8_t*)&data,5,1000);
-		HAL_Delay(10);
-    // maincpp();
+    //    JoystickDataTransmit();
+    MainCppLoop();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -133,21 +151,21 @@ int main(void)
 }
 
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
+ * @brief System Clock Configuration
+ * @retval None
+ */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
   /** Configure the main internal regulator output voltage
-  */
+   */
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
 
   /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
+   * in the RCC_OscInitTypeDef structure.
+   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
@@ -164,9 +182,8 @@ void SystemClock_Config(void)
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+   */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
@@ -183,9 +200,9 @@ void SystemClock_Config(void)
 /* USER CODE END 4 */
 
 /**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
+ * @brief  This function is executed in case of error occurrence.
+ * @retval None
+ */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
@@ -197,14 +214,14 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
+ * @brief  Reports the name of the source file and the source line number
+ *         where the assert_param error has occurred.
+ * @param  file: pointer to the source file name
+ * @param  line: assert_param error line source number
+ * @retval None
+ */
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */

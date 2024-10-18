@@ -1,4 +1,4 @@
-stick_beitong/joystick.o: ..\BSP\Interface\joystick.cpp \
+stick_beitong/joystick.o: ..\BSP\Interface\joystick.c \
   ..\BSP\Interface\joystick.h ..\Core\Inc\main.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Core\Inc\stm32g4xx_hal_conf.h \
@@ -7,8 +7,6 @@ stick_beitong/joystick.o: ..\BSP\Interface\joystick.cpp \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g473xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\__config \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
   D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_version.h \
   D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\cmsis_compiler.h \
@@ -18,7 +16,6 @@ stick_beitong/joystick.o: ..\BSP\Interface\joystick.cpp \
   D:\Project\Embedded_project\Stm_pro\joystick_Beitong\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\libcxx\stddef.h \
   C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stddef.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
@@ -49,4 +46,4 @@ stick_beitong/joystick.o: ..\BSP\Interface\joystick.cpp \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
-  ..\Core\Inc\adc.h ..\BSP\Interface\sky_button.h ..\BSP\LCD\lcd.h
+  ..\Core\Inc\adc.h ..\Core\Inc\usart.h

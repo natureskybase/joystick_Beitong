@@ -43,7 +43,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+extern int TIM1_FLAG;
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

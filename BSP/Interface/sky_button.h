@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-09-25 00:06:55
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-04 09:29:34
+ * @LastEditTime: 2024-10-18 19:52:47
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\sky_button.h
  */
@@ -22,8 +22,6 @@ class button
 {
 public:
     typedef void (*ButtonEventCallbackType)(int);
-
-
 
     int button_id = 0;
     int button_priority = 0;
@@ -63,17 +61,8 @@ private:
     void button_update();
 };
 
-// class Buttons
-// {
-// public:
-//     class button *bt;
 
-//     Buttons(button _bt[], int bt_num);
-//     void ButtonsUpdate();
 
-// private:
-//     int bt_num;
-// };
 
 class joystick
 {

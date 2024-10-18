@@ -1,3 +1,10 @@
+#ifdef __cplusplus
+
+extern "C"
+{
+#endif
+	
+	
 #include "maincpp.h"
 #include "sky_button.h"
 #include "sky_menu.h"
@@ -8,9 +15,6 @@
 #include <stdio.h>
 #include <cstdio>
 
-int TIM1_FLAG = 0;
-
-uint16_t adc_vals[5] = {0};
 static int bt_id = 0;
 button button_RT = button(RT_GPIO_Port, RT_Pin, bt_id++);
 button button_RB = button(RB_GPIO_Port, RB_Pin, bt_id++);
@@ -92,10 +96,6 @@ void stickin(uint16_t x, uint16_t y)
 	// LCD_ShowIntNum(10, 30, test_num1++, 4, RED, WHITE, 16);
 	LCD_Fill(0, 0, 160, 80, BLACK);
 
-	// 3.45v 1800
-	// 3.54v 1860
-	// 4.15v 1960
-
 	// set HOME as awake trigger
 	{
 		LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -138,7 +138,7 @@ void stickin(uint16_t x, uint16_t y)
 	LL_TIM_EnableIT_UPDATE(TIM2);
 }
 
-void button_update_test()
+void button_update_test(void)
 {
 	// button_A.buttonStateUpdate();
 	sticktest.StickStateUpdate();
@@ -148,12 +148,51 @@ void node_change(int i)
 {
 	LCD_Fill(0, 20, 160, 80, WHITE);
 }
-void gui_update()
+void gui_update(void)
 {
 	LCD_ShowIntNum(72, 60, menu.now_MenuElem->id, 1, RED, WHITE, 16);
 	char battery_inf[10] = {0};
 	snprintf(battery_inf, sizeof(battery_inf), "%3d%%", (int)(remap(180, 196, 0, 10, (float)(adc_vals[4] / 10))) * 10);
 	LCD_ShowString(128, 0, (uint8_t *)battery_inf, GREEN, BLUE, 16, 0);
+}
+
+int MainCppInit(void)
+{
+	sticktest.EventRegister(stickin, 1000, 1000, sticktest.TOIN, 0);
+
+	button_LEFT.buttonCallRegist(button_dowm, BTDown);
+	button_UP.buttonCallRegist(button_dowm, BTDown);
+	button_DOWN.buttonCallRegist(button_dowm, BTDown);
+	button_RIGHT.buttonCallRegist(button_dowm, BTDown);
+
+	menu.Add_Elem(1);
+	menu.Add_Elem(2);
+	menu.Add_Elem(3);
+	menu.Add_Elem(4);
+	menu.Add_Elem(5);
+	menu.Add_Elem(5, 6);
+	menu.Add_Elem(5, 7);
+
+	return 0;
+}
+
+int MainCppLoop(void)
+{
+	// gui_update();
+	if (TIM1_FLAG == 1)
+	{
+		TIM1_FLAG = 0;
+
+		menu.AnimaCla();
+
+		// TODO
+		// 这俩玩意到时候得一起再定时器里面执行
+		// menu.now_MenuElem->ElemAnimator->CalculateNextFrame(Linear);
+		// menu.now_MenuElem->DrawElem(Tile_Cube);
+		menu.AnimaUpdate();
+	}
+
+	return 0;
 }
 int maincpp(void)
 {
@@ -192,30 +231,7 @@ int maincpp(void)
 	return 0;
 }
 
-#ifdef __cplusplus
 
-extern "C"
-{
-#endif
-
-	void tim2_callback(void)
-	{
-		LL_TIM_ClearFlag_UPDATE(TIM2);
-		TIM1_FLAG = 1;
-		// !5ms的中断用于判断按键
-		HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_vals, 5);
-
-		sticktest.dead_response = 500;
-		sticktest.dir_x = adc_vals[0];
-		sticktest.dir_y = adc_vals[1];
-
-		// JoystickDataTransmit();
-
-		button_update_test();
-		button_state_update();
-
-
-	}
 
 #ifdef __cplusplus
 }

@@ -10,6 +10,7 @@
 "stick_beitong\usart.o"
 "stick_beitong\stm32g4xx_it.o"
 "stick_beitong\stm32g4xx_hal_msp.o"
+"stick_beitong\stm32g4xx_ll_rcc.o"
 "stick_beitong\stm32g4xx_ll_utils.o"
 "stick_beitong\stm32g4xx_ll_exti.o"
 "stick_beitong\stm32g4xx_ll_gpio.o"
@@ -37,14 +38,13 @@
 "stick_beitong\stm32g4xx_ll_tim.o"
 "stick_beitong\stm32g4xx_hal_uart.o"
 "stick_beitong\stm32g4xx_hal_uart_ex.o"
-"stick_beitong\stm32g4xx_ll_rcc.o"
 "stick_beitong\system_stm32g4xx.o"
 "stick_beitong\sky_button.o"
 "stick_beitong\lcd.o"
 "stick_beitong\lcd_init.o"
 "stick_beitong\drawer.o"
 "stick_beitong\sky_menu.o"
-"stick_beitong\joystick_1.o"
+"stick_beitong\joystick.o"
 --strict --scatter "stick_beitong\stick_beitong.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

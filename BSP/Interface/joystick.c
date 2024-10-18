@@ -2,17 +2,18 @@
  * @Author: skybase
  * @Date: 2024-08-14 00:52:05
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-18 18:47:26
+ * @LastEditTime: 2024-10-18 22:17:10
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\joystick.c
  */
 #include "joystick.h"
 
-uint32_t button_state = 0x0000;
-uint32_t button_state_extence = 0x0000;
-spindle joystick_spin = {0};
-
+volatile uint16_t button_state = 0x0000;
+volatile uint16_t button_state_extence = 0x0000;
+volatile spindle joystick_spin = {0};
 extern UART_HandleTypeDef huart1;
+
+uint16_t adc_vals[5] = {0};
 
 void JoystickDataUpdate()
 {
@@ -29,8 +30,8 @@ void JoystickDataUpdate()
     button_state_extence = (!(_gpio_state_a & CLEAR_Pin)) ? button_state_extence | Clear : button_state_extence & ~Clear;
     button_state_extence = (!(_gpio_state_a & THRBO_Pin)) ? button_state_extence | Thrbo : button_state_extence & ~Thrbo;
     button_state_extence = (!(_gpio_state_a & HOME_Pin)) ? button_state_extence | Beitong : button_state_extence & ~Beitong;
-    button_state_extence = (!(_gpio_state_c & LB_Pin)) ? button_state_extence | LB_Pin : button_state_extence & ~LB_Pin;
-    button_state_extence = (!(_gpio_state_c & RB_Pin)) ? button_state_extence | RB_Pin : button_state_extence & ~RB_Pin;
+    button_state_extence = (!(_gpio_state_c & LB_Pin)) ? button_state_extence | LB : button_state_extence & ~LB;
+    button_state_extence = (!(_gpio_state_c & RB_Pin)) ? button_state_extence | RB : button_state_extence & ~RB;
 
     button_state = (!(_gpio_state_b & RS_Pin)) ? button_state | RightShoulder : button_state & ~RightShoulder;
     button_state = (!(_gpio_state_b & LS_Pin)) ? button_state | LeftShoulder : button_state & ~LeftShoulder;
@@ -50,31 +51,24 @@ void JoystickDataUpdate()
     joystick_spin.VR = adc_vals[3];
 }
 
-#pragma pack(1)
-struct dataToTransmit
-{
-    uint8_t frame[2];
-    uint32_t bs;
-    uint32_t bse;
-    spindle sp;
-    uint8_t ddr8;
-};
-#pragma pack(0)
-
+struct dataToTransmit data;
 void JoystickDataTransmit()
 {
     JoystickDataUpdate();
-    struct dataToTransmit data;
     data.bs = button_state;
     data.bse = button_state_extence;
-    data.sp = joystick_spin;
     data.frame[0] = 0xfe;
     data.frame[1] = 0xaa;
-    data.ddr8 = (uint8_t)(data.frame[0] + data.frame[1] + data.bs + data.bse + data.sp.VL + data.sp.HL + data.sp.HR + data.sp.VR);
+    data.sp = joystick_spin;
 
-    HAL_UART_Transmit_DMA(&huart1, (uint8_t *)&data, sizeof(data));
-    //    void Usart1DmaTransmit(uint8_t * data, uint16_t len);
-    //    Usart1DmaTransmit((uint8_t *)&data, sizeof(data));
+    data.ddr8 = 0;
+		uint8_t *dataTemp = (uint8_t*)&data;
+    for (int i = 0; i < sizeof(struct dataToTransmit); i++)
+    {
+        data.ddr8 += *dataTemp;
+				dataTemp++;
+    }
+    HAL_UART_Transmit_DMA(&huart1, (uint8_t *)&data, sizeof(struct dataToTransmit));
 }
 
 void Usart1DmaTransmit(uint8_t *data, uint16_t len)

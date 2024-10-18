@@ -41,7 +41,7 @@ void LCD_Writ_Bus(u8 dat)
 	while (!LL_SPI_IsActiveFlag_TXE(SPI3))
 		;
 	LL_SPI_TransmitData8(SPI3, dat);
-	delay(5);
+	delay(4);
 	LCD_CS_Set();
 }
 

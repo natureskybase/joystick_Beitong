@@ -2,7 +2,7 @@
  * @Author: skybase
  * @Date: 2024-08-14 00:52:25
  * @LastEditors: skybase
- * @LastEditTime: 2024-10-18 18:48:58
+ * @LastEditTime: 2024-10-18 22:04:49
  * @Description:  ᕕ(◠ڼ◠)ᕗ​
  * @FilePath: \MDK-ARMd:\Project\Embedded_project\Stm_pro\joystick_Beitong\BSP\Interface\joystick.h
  */
@@ -56,12 +56,18 @@ typedef struct
     uint16_t HR;
 
 } spindle;
+
+struct dataToTransmit
+{
+    uint8_t frame[2];
+    uint16_t bs;
+    uint16_t bse;
+    spindle sp;
+    uint8_t ddr8;
+};
 #pragma pack()
 
 
-extern uint32_t button_state;
-extern uint32_t button_state_extence;
-extern spindle joystick_spin;
 extern uint16_t adc_vals[5];
 void JoystickDataTransmit();
 
